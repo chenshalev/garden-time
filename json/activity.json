@@ -1,0 +1,16 @@
+[{
+        "activity": "Watering"
+    },
+    {
+        "activity": "Fertilization & Herbicides"
+    },
+    {
+        "activity": "Trimming (grass or plants)"
+    },
+    {
+        "activity": "Planting & Sowing"
+    },
+    {
+        "activity": "Fruit-picking"
+    }
+]
