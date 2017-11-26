@@ -3,5 +3,9 @@
     "e-mail": "ariel.sluszny@gmail.com",
     "phone": "+972-54-2212423",
     "role": "Manager",
+<<<<<<< HEAD
     "test":"bla"
+=======
+    "city": "Kiryat Tiv'on"
+>>>>>>> 306542a296695bb2b016c4031b14445a7cca685e
 }]
