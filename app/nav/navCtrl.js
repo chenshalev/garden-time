@@ -1,6 +1,6 @@
 
-gardenApp.controller("navCtrl", function($scope, $location) {
-    $scope.isActive = function(path) {
-        return $location.path().includes(path);
-    }
+gardenApp.controller("navCtrl", function($scope, activeUser) {
+    $scope.isLoggedIn = function() {
+        return activeUser.isLoggedIn();
+    };
 })

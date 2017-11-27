@@ -1,0 +1,16 @@
+[
+    {
+        "email": "chensha07@gmail.com",
+        "password": "123",
+        "firstName": "Chen",
+        "lastName": "Shalev",
+        "data": "app/model/data/chen.json"
+    },
+    {
+        "email": "orly.sluszny@gmail.com",
+        "password": "456",
+        "firstName": "Orly",
+        "lastName": "Sluszny",
+        "data": "app/model/data/orly.json"
+    }
+]
