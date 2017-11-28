@@ -10,6 +10,11 @@ gardenApp.config(function ($routeProvider) {
             templateUrl: "app/manager/managerMain.html",
             controller: "managerMainCtrl"
         })
+        .when("/employeeMain", {
+            templateUrl: "app/employee/employeeMain.html",
+            controller: "employeeCtrl"
+        })
+
 })
     /*
   gardenApp.controller("TestCtrl", function ($scope, User, activeUser) {

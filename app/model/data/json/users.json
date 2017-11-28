@@ -5,7 +5,7 @@
         "firstName": "Chen",
         "lastName": "Shalev",
         "data": "app/model/data/json/chen.json",
-        "role":"manager"
+        "role":"employee"
     },
     {
         "email": "orly.sluszny@gmail.com",
@@ -13,6 +13,6 @@
         "firstName": "Orly",
         "lastName": "Sluszny",
         "data": "app/model/data/json/orly.json",
-        "role":"employee"
+        "role":"manager"
     }
 ]
