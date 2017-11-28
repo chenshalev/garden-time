@@ -20,12 +20,16 @@
    
   
     <script src="app/app.js"></script>
+
     <script src="app/home/homeCtrl.js"></script>
-    <script src="app/model/user.js"></script>
     <script src="app/nav/navCtrl.js"></script>
     <script src="app/manager/managerMainCtrl.js"></script>
     <script src="app/employee/employeeCtrl.js"></script>
     <script src="app/login/loginCtrl.js"></script>
+
+    <script src="app/model/user.js"></script>
+    <script src="app/model/tasks.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     
     <title>Garden Maintenance</title>
@@ -49,9 +53,10 @@
             <ul class="nav navbar-nav">
                 <!--<li ng-show="isLoggedIn()"><a href="#!/managerMain">manager</a></li>
                 <li ng-show="isLoggedIn()"><a href="#!/employeeMain">employee</a></li>
-                -->
+   
                 <li ng-show="isLoggedIn()"><a href="#!/newTask">New task</a></li>
-            </ul>
+                  -->
+                       </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li ng-hide="isLoggedIn()"><a href="#">Login</a></li>
                 <li ng-show="isLoggedIn()"><a href="#">Logout</a></li>
