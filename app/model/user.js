@@ -6,12 +6,13 @@ gardenApp.factory("User", function(){
         this.firstName = plainObject.firstName;
         this.lastName = plainObject.lastName;
         this.data = plainObject.data;
+        this.role = plainObject.role;
     };
 
     return User;
 });
 
-// Service that manges the active user
+// Service that manages the active user
 gardenApp.factory("activeUser", function(User){
     var user = null;
 
