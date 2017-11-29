@@ -1,16 +1,21 @@
 [{
-        "activity": "Watering"
+        "activity": "Watering",
+        "image": "http://www.jonathangreen.com/wp-content/uploads/2016/06/sprinkler-wide-3-857x330.jpg"
     },
     {
-        "activity": "Fertilization & Herbicides"
+        "activity": "Fertilization & Herbicides",
+        "image": "http://www.green-kids.co.il/albums_pics/52992bae8ea3e.jpg"
     },
     {
-        "activity": "Trimming (grass or plants)"
+        "activity": "Trimming (grass or plants)",
+        "image": "http://www.ganvnof.co.il/Media/Uploads/DSC_8777.JPG"
     },
     {
-        "activity": "Planting & Sowing"
+        "activity": "Planting & Sowing",
+        "image": "http://www.djamok.net/wp-content/uploads/2017/08/vegetable-garden.jpg"
     },
     {
-        "activity": "Fruit-picking"
+        "activity": "Fruit-picking",
+        "image": "https://www.artificialgrassliquidators.com/wp-content/uploads/2017/01/iStock_7308342_SMALL.jpg"
     }
 ]
