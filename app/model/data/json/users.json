@@ -5,7 +5,7 @@
         "firstName": "Chen",
         "lastName": "Shalev",
         "data": "app/model/data/json/chen.json",
-        "role":"Manager"
+        "role":"Employee"
     },
     {
         "email": "orly.sluszny@gmail.com",

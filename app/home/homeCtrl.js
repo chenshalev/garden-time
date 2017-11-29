@@ -23,7 +23,8 @@ gardenApp.controller("homeCtrl", function ($scope, $http, $location, activeUser,
             if (activeUser.get().role === "Manager") {
                 $location.path("/managerMain");
             } else {
-                $location.path("/employeeMain");
+                //$location.path("/employeeMain");
+                $location.path("/managerMain");
             }
         } else {
             $scope.failedAttempt = true;
