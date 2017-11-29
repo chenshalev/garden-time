@@ -3,39 +3,29 @@
         <h1>this is home.html</h1>
         <p>כאן נכתוב את התוכן השיווק </p>
     </div>
-<div class="login row col-xs-2 col-sm-2 col-md-2 col-lg-2">
-<div class="modal-header">
-    please sign in
-</div>
-<div class="modal-body">
- 
-    <form class=" form-horizontal ">
-        <div class="form-group">
-           <!-- <label class="control-label col-sm-2" for="email">Email:</label>-->
-            <div class="">
-                <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="email">
-            </div>
+    <div class="login row col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <div class="modal-header">
+            please sign in
         </div>
-        <div class="form-group">
-            <div class="">
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" ng-model="password">
-            </div>
-        </div>
-        <div class="form-group">
-                <div class="alert alert-danger col-xs-1 col-sm-1 col-md-1 col-lg-1" ng-show="failedAttempt">
+        <div class="modal-body">
+
+            <form class=" form-horizontal ">
+                <div class="form-group">
+                    <!-- <label class="control-label col-sm-2" for="email">Email:</label>-->
+                    <div class="">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" ng-model="password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="alert alert-danger col-xs-1 col-sm-1 col-md-1 col-lg-1" ng-show="failedAttempt">
                         Invalid email or password
                     </div>
-                
-            <div class="">
-                <button type="submit" class="btn btn-default pull-right" ng-click="login()">Login</button>
-            </div>
-        </div>
-    </form>
-</div>
-</div>
-</div>
-
-
-<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
-    
-</div>
+                    <button type="submit" class="btn btn-default pull-right" ng-click="login()">Login</button>
+                </div>
+        </form>
+    </div>
