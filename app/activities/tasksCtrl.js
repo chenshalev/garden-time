@@ -1,15 +1,15 @@
 gardenApp.controller("tasksCtrl", function ($scope, $log, $http, $location, activeUser) {
     $scope.user = activeUser.get();
-    alert("gfgfg");
+
     if (!activeUser.isLoggedIn()) {
         $location.path("/");
         return;
     }
 
-    $scope.gotonewtask = function () {
+    $scope.newtask = function () {
         $location.path("/newtask");
     }
-    $scope.gotoreports = function () {
+    $scope.reports = function () {
         $location.path("/reports");
     }
 
