@@ -9,8 +9,11 @@
     font-family: "Pacifico";
     font-size: 4em;
 }
-
 .openActivity {
+    cursor: pointer;
+}
+
+.pointer {
     cursor: pointer;
 }
 .login {
