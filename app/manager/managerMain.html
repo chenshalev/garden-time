@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="activity in activityArr">
 
-            <div class="well activity-window">
+            <div class="well openActivity" ng-click="openActivity(activity)">
                 {{activity.activity}}
                 <img ng-src="{{activity.image}}" class="img-responsive" alt="Image">
             </div>
