@@ -20,7 +20,7 @@ gardenApp.controller("homeCtrl", function ($scope, $http, $location, activeUser,
         if (user != null) {
             activeUser.login(user);
             //$uibModalInstance.close("Logged-in");
-            if (activeUser.get().role === "manager") {
+            if (activeUser.get().role === "Manager") {
                 $location.path("/managerMain");
             } else {
                 $location.path("/employeeMain");
