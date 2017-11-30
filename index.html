@@ -44,9 +44,9 @@
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar">qqq</span>
-                <span class="icon-bar">ccc</span>
-                <span class="icon-bar">ddd</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Garden Maintenance</a>
         </div>
@@ -54,11 +54,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li ng-show="isLoggedIn()"><a href="#!/managerMain">manager</a></li>
-                <li ng-show="isLoggedIn()"><a href="#!/employeeMain">employee</a></li>
-   
+                <li ng-show="isLoggedIn()"><a href="#!/managerMain">Main</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/employee">employee reports</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/reports">see reports</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/Watering">Watering</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/Fertilization">Fertilization & Herbicides</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/Trimming">Trimming (grass or plants)</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/Planting">Planting & Sowing</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/Fruit">Fruit-picking</a></li>
+                <li ng-show="isLoggedIn()"><a href="#!/Settings">Settings</a></li>
                 <li ng-show="isLoggedIn()"><a href="#!/newTask">New task</a></li>
-                  -->
                        </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li ng-hide="isLoggedIn()"><a href="#">Login</a></li>
@@ -68,6 +73,26 @@
     </nav>
         
     <ng-view></ng-view>
+<!--footer start from here-->
 
-</body>
+<div class="copyright">
+        <div class="container">
+          <div class="col-md-6">
+            <p>© 2018 - All Rights with gardenMaintenance</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="bottom_ul">
+              <li><a href="#">webenlance.com</a></li>
+              <li><a href="#">About us</a></0
+                li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Faq's</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    </body>
 </html>
