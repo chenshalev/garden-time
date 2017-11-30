@@ -5,6 +5,11 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
         $location.path("/");
         return;
     }
-
+    $http.get("app/model/data/json/activity.json").then(function mySuccess(response) {
+        // Updating the service with the data
+        $scope.activityArr = response.data; 
+    }, function myError(response) {
+        alert("error" + JSON.stringify(response.status));
+    });
 
 });
