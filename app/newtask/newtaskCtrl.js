@@ -29,5 +29,6 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
-    
+    $scope.fromDate = new Date();
+    $scope.toDate = new Date();
 });

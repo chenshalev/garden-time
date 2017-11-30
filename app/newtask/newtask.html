@@ -19,11 +19,10 @@
               <input type="text" class="form-control" id="desc" placeholder="Enter Task description" ng-model="Task.description">
             </div>
           </div>
-          <div class="form-group">   
+          <div class="form-group" class="pull-left" >   
             <label class="control-label col-sm-2" for="activity">Choose Activity:</label>
             <div class="col-sm-10">
             <select ng-model="selectedactivity" ng-options="y.activity for (x, y) in activityArr">
-
             </select>
             </div>
           </div>
@@ -31,7 +30,6 @@
               <label class="control-label col-sm-2" for="location">Choose Location:</label>
               <div class="col-sm-10">
               <select ng-model="selectedlocation" ng-options="y.name for (x, y) in locationArr">
-  
               </select>
               </div>
             </div>
@@ -39,18 +37,32 @@
                 <label class="control-label col-sm-2" for="plants">Choose Plant:</label>
                 <div class="col-sm-10">
                 <select ng-model="selectedplants" ng-options="y.name for (x, y) in plantsArr">
-    
                 </select>
                 </div>
-              </div>
+            </div>
               <div class="form-group">   
                   <label class="control-label col-sm-2" for="employee">Choose Employee:</label>
                   <div class="col-sm-10">
                   <select ng-model="selectedemployee" ng-options="y.firstName for (x, y) in employeeArr">
-      
                   </select>
                   </div>
+              </div>
+                <div class="form-group" class="col-sm-10" ng-controller="dateCtrl">
+                    <label> From: <input type="date" ng-model="fromDate" /></label>
+                    <label> To: <input type="date" ng-model="toDate" /></label>
                 </div>
+
+                <div class="form-group" class="col-sm-10">
+                    <label>Synchronized with Calendar: <input type="radio" ng-model="myVar" value="yes">yes
+                  <input type="radio" ng-model="myVar" value="no">No</label>
+                  <!--<div ng-switch="myVar">
+                      <div ng-switch-when="no">
+                      </div>
+                      <div ng-switch-when="yes"> 
+                      </div>
+                    </div>-->
+                </div>
+
           <div class="form-group">
             <label class="control-label col-sm-2" for="Remarks">Remarks:</label>
             <div class="col-sm-10">
