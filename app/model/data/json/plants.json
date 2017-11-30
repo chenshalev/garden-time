@@ -17,7 +17,16 @@
         "image": "https://i.ebayimg.com/images/g/7~wAAOSwKtlWjjHe/s-l400.jpg",
         "link": "https://garden.org/plants/view/114584/Macadamia-Macadamia-integrifolia/",
         "location": "Backyard",
-        "Kind": " Fruit Tree"
+        "Kind": " Fruit Tree",
+        "Fruiting Time begins":"",
+        "Fruiting Time ends":"",
+        "Fertilization Material":"",
+        "Fertilization Time begin":"",
+        "Fertilization Time ends":"",
+        "Planting & Sowing":"",
+        "Trimming":"",
+        "Watering":"",
+
     }, {
         "name": "Olive",
         "image": "https://i.ebayimg.com/images/g/-OIAAOSwoVNaGKER/s-l1600.jpg",

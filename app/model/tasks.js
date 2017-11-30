@@ -3,7 +3,7 @@ gardenApp.factory("Task", function(){
     function Task(plainObject) {
         this.activity= plainObject.activity;
         this.location = plainObject.location;
-        this.dueDate = plainObject.dueDate;
+        this.dueDate = new Date(plainObject.dueDate);
         this.Employee = plainObject.Employee;
         this.imageUrl = plainObject.imageUrl;
     };
