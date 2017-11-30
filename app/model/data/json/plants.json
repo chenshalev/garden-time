@@ -3,14 +3,30 @@
         "image": "https://i.ebayimg.com/images/g/CPAAAOSwnCFZ~1gV/s-l500.jpg",
         "link": "https://garden.org/plants/view/75783/Pecans-Carya-illinoinensis/",
         "location": "Backyard",
-        "Kind": "Tree"
+        "Kind": "Tree",
+        "Fruiting Time begins":"",
+        "Fruiting Time ends":"",
+        "Fertilization Material":"",
+        "Fertilization Time begin":"",
+        "Fertilization Time ends":"",
+        "Planting & Sowing":"",
+        "Trimming":"",
+        "Watering":""
     },
     {
         "name": "Library",
         "image": "https://www.artificialgrassliquidators.com/wp-content/uploads/2017/01/iStock_7308342_SMALL.jpg",
         "link": "https://garden.org/",
         "location": "Garden",
-        "Kind": "Index"
+        "Kind": "Index",
+        "Fruiting Time begins":"",
+        "Fruiting Time ends":"",
+        "Fertilization Material":"",
+        "Fertilization Time begin":"",
+        "Fertilization Time ends":"",
+        "Planting & Sowing":"",
+        "Trimming":"",
+        "Watering":""
     },
     {
         "name": "Macadamia",
@@ -25,31 +41,63 @@
         "Fertilization Time ends":"",
         "Planting & Sowing":"",
         "Trimming":"",
-        "Watering":"",
+        "Watering":""
 
     }, {
         "name": "Olive",
         "image": "https://i.ebayimg.com/images/g/-OIAAOSwoVNaGKER/s-l1600.jpg",
         "link": "https://garden.org/plants/view/78037/Olive-Tree-Olea-europaea/",
         "location": "Backyard",
-        "Kind": "Tree"
+        "Kind": "Tree",
+        "Fruiting Time begins":"",
+        "Fruiting Time ends":"",
+        "Fertilization Material":"",
+        "Fertilization Time begin":"",
+        "Fertilization Time ends":"",
+        "Planting & Sowing":"",
+        "Trimming":"",
+        "Watering":""
     }, {
         "name": "Pomegranate",
         "image": "https://i.ebayimg.com/images/g/GYkAAOSwnTdaBArn/s-l500.jpg",
         "link": "https://garden.org/plants/view/112532/Dwarf-Pomegranate-Punica-granatum-Nana/",
         "location": "Backyard",
-        "Kind": "Tree"
+        "Kind": "Tree",
+        "Fruiting Time begins":"",
+        "Fruiting Time ends":"",
+        "Fertilization Material":"",
+        "Fertilization Time begin":"",
+        "Fertilization Time ends":"",
+        "Planting & Sowing":"",
+        "Trimming":"",
+        "Watering":""
     }, {
         "name": "Orange",
         "image": "https://i.ebayimg.com/images/g/9hcAAMXQAx9RRPTG/s-l1600.jpg",
         "link": "https://garden.org/plants/view/611621/Orange-Citrus-Ambersweet/",
         "location": "Backyard",
-        "Kind": "Tree"
+        "Kind": "Tree",
+        "Fruiting Time begins":"",
+        "Fruiting Time ends":"",
+        "Fertilization Material":"",
+        "Fertilization Time begin":"",
+        "Fertilization Time ends":"",
+        "Planting & Sowing":"",
+        "Trimming":"",
+        "Watering":""
     }, {
         "name": "Mango",
         "image": "https://i.ebayimg.com/images/g/MW0AAOSwn25aEeYz/s-l1600.jpg",
         "link": "https://garden.org/plants/view/74352/Common-Mango-Mangifera-indica/",
         "location": "Backyard",
-        "Kind": "Tree"
+        "Kind": "Tree",
+        "Fruiting Time begins":"",
+        "Fruiting Time ends":"",
+        "Fertilization Material":"",
+        "Fertilization Time begin":"",
+        "Fertilization Time ends":"",
+        "Planting & Sowing":"",
+        "Trimming":"",
+        "Watering":""
     }
 ]

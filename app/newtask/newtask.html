@@ -27,6 +27,30 @@
             </select>
             </div>
           </div>
+          <div class="form-group">   
+              <label class="control-label col-sm-2" for="location">Choose Location:</label>
+              <div class="col-sm-10">
+              <select ng-model="selectedlocation" ng-options="y.name for (x, y) in locationArr">
+  
+              </select>
+              </div>
+            </div>
+            <div class="form-group">   
+                <label class="control-label col-sm-2" for="plants">Choose Plant:</label>
+                <div class="col-sm-10">
+                <select ng-model="selectedplants" ng-options="y.name for (x, y) in plantsArr">
+    
+                </select>
+                </div>
+              </div>
+              <div class="form-group">   
+                  <label class="control-label col-sm-2" for="employee">Choose Employee:</label>
+                  <div class="col-sm-10">
+                  <select ng-model="selectedemployee" ng-options="y.firstName for (x, y) in employeeArr">
+      
+                  </select>
+                  </div>
+                </div>
           <div class="form-group">
             <label class="control-label col-sm-2" for="Remarks">Remarks:</label>
             <div class="col-sm-10">
