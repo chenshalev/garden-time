@@ -18,12 +18,5 @@ gardenApp.controller("managerMainCtrl", function ($scope, $log, $http, $location
     $scope.openActivity = function (activity) {
         $location.path("/" + activity.window);
     }
-    $scope.gotonewtask = function () {
-        $location.path("/newtask");
-    }
-    $scope.gotoreports = function () {
-        $location.path("/reports");
-    }
-
 
 });
