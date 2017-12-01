@@ -1,7 +1,7 @@
-
-bo.navbar {
+    bo.navbar {
     margin-bottom: 0;
 }
+
 .navbar-brand {
     font-family: "Pacifico";
 }
@@ -10,6 +10,7 @@ bo.navbar {
     font-family: 'Amaranth', sans-serif;
     font-size: 4em;
 }
+
 .openActivity {
     cursor: pointer;
 }
@@ -17,15 +18,14 @@ bo.navbar {
 .pointer {
     cursor: pointer;
 }
+
 .login {
-    background-color: lightgreen;
- 
-.footer-bottom {
-    background:#d8d8d8;
-    padding:15px 0;
-    border-top:1px solid #d9d9d9;
-    font-size:11px;
-    color:#777;
-    margin-bottom:0;
-   }
-   
+    background-color: rgba(89, 145, 89, 0.685);
+    .footer-bottom {
+        background: #d8d8d8;
+        padding: 15px 0;
+        border-top: 1px solid #d9d9d9;
+        font-size: 11px;
+        color: #777;
+        margin-bottom: 0;
+    }
