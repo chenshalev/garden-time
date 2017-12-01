@@ -38,6 +38,18 @@
         "image": "https://media.licdn.com/media/AAEAAQAAAAAAAAduAAAAJGE5ZjdmYTQ4LTc0NmYtNGE1OS04YTI3LTYzMGFlNzAxZjYyYQ.png",
         "window": "tasks"
 
+    },
+    {
+        "activity": "Wheater Forecast",
+        "image": "https://i.pinimg.com/736x/f0/cd/84/f0cd84146f2a402c2762b9a2b7383bb7--hummingbird-garden-weather-vanes.jpg",
+        "window": "Wheater Forecast"
+
+    },
+    {
+        "activity": "Calendar",
+        "image": "http://quicklyads.in/uploads/app/categories/skin-bright/fa-calendar.png",
+        "window": "Calendar"
+
     }
 
 ]
