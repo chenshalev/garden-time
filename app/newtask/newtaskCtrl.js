@@ -38,13 +38,13 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
     $scope.todate = new Date();
 
     $scope.cancel = function () {
-        $location.path("/newtask");
+        $location.path("/newTask");
     }
 
     $scope.create = function () {
         tasks.add($scope.task);
         alert("saved!"+JSON.stringify($scope.taskArr));
-        $location.path("/newtask");
+        $location.path("/newTask");
     }
 
 
