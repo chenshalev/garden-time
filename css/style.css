@@ -1,4 +1,5 @@
-.navbar {
+
+bo.navbar {
     margin-bottom: 0;
 }
 .navbar-brand {
@@ -18,4 +19,13 @@
 }
 .login {
     background-color: lightgreen;
-}
+ 
+.footer-bottom {
+    background:#d8d8d8;
+    padding:15px 0;
+    border-top:1px solid #d9d9d9;
+    font-size:11px;
+    color:#777;
+    margin-bottom:0;
+   }
+   
