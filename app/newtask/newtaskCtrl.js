@@ -1,4 +1,4 @@
-gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, activeUser,tasks) {
+gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, activeUser, tasks) {
     $scope.user = activeUser.get();
     $scope.taskArr = [];
     if (!activeUser.isLoggedIn()) {
@@ -37,13 +37,13 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
     $scope.fromdate = new Date();
     $scope.todate = new Date();
 
-    $scope.cancel = function () {
+    $scope.cancel = function() {
         $location.path("/newTask");
     }
 
-    $scope.create = function () {
+    $scope.create = function() {
         tasks.add($scope.task);
-        alert("saved!"+JSON.stringify($scope.taskArr));
+        alert("Saved!" + JSON.stringify($scope.taskArr));
         $location.path("/newTask");
     }
 

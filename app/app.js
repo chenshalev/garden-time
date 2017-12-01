@@ -1,10 +1,10 @@
-var gardenApp = angular.module("gardenApp",["ngRoute"]);
+var gardenApp = angular.module("gardenApp", ["ngRoute"]);
 
-gardenApp.config(function ($routeProvider) {
+gardenApp.config(function($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "app/home/home.html",
-        controller: "homeCtrl"
+            controller: "homeCtrl"
         })
         .when("/managerMain", {
             templateUrl: "app/manager/managerMain.html",
@@ -16,34 +16,36 @@ gardenApp.config(function ($routeProvider) {
         })
         .when("/Watering", {
             templateUrl: "app/activities/Watering.html",
-         })
-         .when("/Fertilization", {
+        })
+        .when("/Fertilization", {
             templateUrl: "app/activities/Fertilization.html",
-         })
-      .when("/Trimming", {
+        })
+        .when("/Trimming", {
             templateUrl: "app/activities/Trimming.html",
-         })
-         .when("/Fruit", {
+        })
+        .when("/Fruit", {
             templateUrl: "app/activities/Fruit.html",
-         })
-         .when("/Planting", {
+        })
+        .when("/Planting", {
             templateUrl: "app/activities/Planting.html",
-         })
-         .when("/Settings", {
+        })
+        .when("/Settings", {
             templateUrl: "app/activities/Settings.html",
-         })
-         .when("/tasks", {
+        })
+        .when("/tasks", {
             templateUrl: "app/activities/tasks.html",
             controller: "tasksCtrl"
         })
-         .when("/newTask", {
+        .when("/newTask", {
             templateUrl: "app/newTask/newTask.html",
             controller: "newTaskCtrl"
         })
-         .when("/reports", {
+        .when("/about", {
+            templateUrl: "app/about/about.html",
+        })
+        .when("/reports", {
             templateUrl: "app/reports/reports.html",
-         })
- 
- 
+        })
+
+
 })
- 
