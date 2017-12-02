@@ -1,5 +1,5 @@
 // Shared Recipe Constructor
-gardenApp.factory("Task", function () {
+gardenApp.factory("Task", function() {
     function Task(plainObject) {
         this.name = plainObject.name;
         this.description = plainObject.description;
@@ -9,7 +9,7 @@ gardenApp.factory("Task", function () {
         this.fromdate = new Date(plainObject.fromdate);
         this.todate = new Date(plainObject.todate);
         this.Employee = plainObject.Employee;
-        this.imageurl = plainObject.imageurl;
+        this.imageUrl = plainObject.imageurl;
         this.remarks = plainObject.remarks;
         this.calendar = plainObject.calendar;
     };
@@ -19,36 +19,36 @@ gardenApp.factory("Task", function () {
 });
 
 
-gardenApp.factory("tasks", function (Task) {
+gardenApp.factory("tasks", function(Task) {
     var taskArr = [];
 
-    var add = function (task) {
+    var add = function(task) {
         taskArr.push(task);
     }
 
-    var update = function (index, task) {
+    var update = function(index, task) {
         taskArr[index] = task;
     }
 
-    var remove = function (index) {
+    var remove = function(index) {
         taskArr.splice(index, 1);
     }
 
-    var load = function (taskPlainObjectArr) {
+    var load = function(taskPlainObjectArr) {
         for (var i = 0; i < taskPlainObjectArr.length; i++) {
             taskArr.push(new Task(taskPlainObjectArr[i]))
         }
     }
 
-    var getAll = function () {
+    var getAll = function() {
         return taskArr;
     }
 
-    var get = function (index) {
+    var get = function(index) {
         return taskArr[index];
     }
 
-    var removeAll = function () {
+    var removeAll = function() {
         taskArr = [];
     }
 
