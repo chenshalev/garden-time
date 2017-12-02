@@ -1,19 +1,21 @@
 <div class="container">
 
-    <div class="jumbotron center-text">
-        <h1>Manager Main</h1>
-        <h2>Hello {{user.firstName}} {{user.lastName}} </h2>
-    </div>
+    <div class="jumbotron text-center">
+        <h1>welcome to your garden maintenance</h1>
+        <h5>{{user.firstName + ' ' + user.lastName}} </h5>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="activity in activityArr">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="activity in activityArr">
 
-            <div class="well openActivity" ng-click="openActivity(activity)">
-                {{activity.activity}}
-                <img ng-src="{{activity.image}}" class="img-responsive" alt="Image">
+                <div class="well openActivity" ng-click="openActivity(activity)">
+                    <img ng-src="{{activity.image}}" class="img-responsive" alt="Image">
+                    <h3 class="text-center">{{activity.activity}}</h3>
+  
+                </div>
+
             </div>
 
         </div>
-
     </div>
+
 </div>

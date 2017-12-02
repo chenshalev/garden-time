@@ -1,63 +1,72 @@
-                                            bo.navbar {
-                                                margin-bottom: 0;
-                                            }
-                                            
-                                            .navbar-brand {
-                                                font-family: "Pacifico";
-                                                
-                                            }
-                                            #navgarden {
-                                                margin:0;
-                                            }
-                                            
-                                            .container .jumbotron {
-                                                font-family: 'Amaranth', sans-serif;
-                                                font-size: 4em;
-                                            }
-                                            
-                                            .container {
-                                                font-family: 'Amaranth', sans-serif;
-                                                font-size: 1.5em;
-                                            }
-                                            
-                                            .navbar {
-                                                font-family: 'Amaranth', sans-serif;
-                                                font-size: 1em;
-                                                margin-top:0;
-                                            }
-                                            .homejumbo {
-                                                margin-top:0;
-                                                margin-bottom:0;
-                                                padding-top:0;
-                                             }
-                                            
-                                            .openActivity {
-                                                cursor: pointer;
-                                            }
-                                            
-                                            .pointer {
-                                                cursor: pointer;
-                                            }
-                                            
-                                            .login {
-                                                background-color: rgba(89, 145, 89, 0.685);
-                                                padding-top:0;
-                                                margin-top: 0;
-                                            }
-                                            
-                                            .body {
-                                                background-image: url("img_tree.png");
-                                                background-repeat: no-repeat;
-                                            }
-                                            .employeetask {
-                                                /*background-image:"http://sr.photos3.fotosearch.com/bthumb/CSP/CSP894/k8941881.jpg"*/
-                                                background-color: yellow;
-                                            }
-                                            .table-hover {
-                                                background-color: paleturquoise;
+body{
+    background-color: #e6ffcc;
+}
+ bo.navbar {
+    margin-bottom: 0;
+}
 
-                                            }
-                                            .table-hdr {
-                                                
-                                            
-                                            }
+.navbar-brand {
+    font-family: "Pacifico";
+    
+}
+
+#navgarden {
+    margin:0;
+}
+
+.container .jumbotron {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 4em;
+    background-color:#e6eeff ;
+}
+
+.container {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1.5em;
+}
+
+.navbar {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 1em;
+    margin-top:0;
+}
+.homejumbo {
+    margin-top:0;
+    margin-bottom:0;
+    padding-top:0;
+ }
+
+.openActivity {
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.login {
+    background-color: rgba(89, 145, 89, 0.685);
+    padding-top:0;
+    margin-top: 0;
+}
+
+.body {
+    background-image: url("img_tree.png");
+    background-repeat: no-repeat;
+}
+.employeetask {
+    /*background-image:"http://sr.photos3.fotosearch.com/bthumb/CSP/CSP894/k8941881.jpg"*/
+    background-color: yellow;
+}
+.table-hover {
+    background-color: paleturquoise;
+
+}
+.table-hdr {
+    
+
+}    
+.openActivity img {
+  width:100%;
+}                                        
+                                           
