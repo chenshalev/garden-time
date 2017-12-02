@@ -37,3 +37,7 @@
                                                 background-image: url("img_tree.png");
                                                 background-repeat: no-repeat;
                                             }
+                                            .employeetask {
+                                                /*background-image:"http://sr.photos3.fotosearch.com/bthumb/CSP/CSP894/k8941881.jpg"*/
+                                                background-color: yellow;
+                                            }

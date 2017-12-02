@@ -20,7 +20,8 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
    
             }
         }
-        $scope.taskArr=tasktemp;
+        $scope.taskArr=taskArr;
+       ///just for now!!!-to take it off!!! $scope.taskArr=tasktemp;
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
