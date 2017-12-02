@@ -1,5 +1,6 @@
 body{
     background-color: #e6ffcc;
+    
 }
  bo.navbar {
     margin-bottom: 0;
@@ -13,7 +14,9 @@ body{
 #navgarden {
     margin:0;
 }
-
+.navbar-default .navbar-nav>li>a {
+    color:green;
+}
 .container .jumbotron {
     font-family: 'Amaranth', sans-serif;
     font-size: 4em;
@@ -29,6 +32,7 @@ body{
     font-family: 'Amaranth', sans-serif;
     font-size: 1em;
     margin-top:0;
+    
 }
 .homejumbo {
     margin-top:0;
