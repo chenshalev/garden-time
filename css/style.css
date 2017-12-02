@@ -4,6 +4,10 @@
                                             
                                             .navbar-brand {
                                                 font-family: "Pacifico";
+                                                
+                                            }
+                                            #navgarden {
+                                                margin:0;
                                             }
                                             
                                             .container .jumbotron {
@@ -48,4 +52,12 @@
                                             .employeetask {
                                                 /*background-image:"http://sr.photos3.fotosearch.com/bthumb/CSP/CSP894/k8941881.jpg"*/
                                                 background-color: yellow;
+                                            }
+                                            .table-hover {
+                                                background-color: paleturquoise;
+
+                                            }
+                                            .table-hdr {
+                                                
+                                            
                                             }

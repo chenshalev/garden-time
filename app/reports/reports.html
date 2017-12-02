@@ -1,7 +1,39 @@
 <div class="container">
 
     <div class="jumbotron center-text">
-        <h1>Reports-Task review window</h1>
+        <h1>Reports-Task review </h1>
         <h2>Hello {{user.firstName}} {{user.lastName}} </h2>
     </div>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="table-hdr">
+                <tr>
+                    <th>task name</th>
+                    <th>description</th>
+                    <th>from date</th>
+                    <th>to date</th>
+                    <th>location</th>
+                    <th>employee</th>
+                    <th>activity</th>
+                    <th>remarks</th>
+                    <th>plant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="task in taskArr" ng-dblclick="openTask(task)">
+                    <td>{{task.name}}</td>
+                    <td>{{task.description}}</td>
+                    <td>{{task.fromdate}}</td>
+                    <td>{{task.todate}}</td>
+                    <td>{{task.location}}</td>
+                    <td>{{task.employee}}</td>
+                    <td>{{task.activity}}</td>
+                    <td>{{task.datedone}}</td>
+                    <td>{{task.remarks}}</td>
+                    <td>{{task.plant}}</td>
+                 </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
