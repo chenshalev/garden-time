@@ -33,4 +33,7 @@
                                                 background-color: rgba(89, 145, 89, 0.685);
                                             }
                                             
-                                            .img-responsive {}
+                                            .body {
+                                                background-image: url("img_tree.png");
+                                                background-repeat: no-repeat;
+                                            }
