@@ -1,63 +1,55 @@
-[    {
-    "name":"cdfdf" ,     
-    "description": "Watering",
-    "remarks": "jkljkjlk",
-    "fromdate": "2017-07-01",
-    "todate": "2017-07-01",
-    "location": "Front garden",
+[{
+        "name": "Testing name",
+        "description": "Watering",
+        "activity": "Watering",
+        "remarks": "Testing remarks",
+        "fromdate": "2017-07-01",
+        "todate": "2017-07-01",
+        "location": "Front garden",
         "DueDate": "2017-12-07",
         "Employee": "Chen",
-        "imageUrl" : "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
+        "imageUrl": "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
     },
     {
         "activity": "Watering",
         "location": "Backyard",
-        "DueDate": "7/12/2017",
-        "Employee": "Chen",
-        "imageUrl" : "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
-    },
-    {
-        "activity": "Watering",
-        "location": "Backyard",
-        "DueDate": "7/12/2017",
+        "fromdate": "2017-07-01",
+        "todate": "2017-07-01",
         "Employee": "Amir",
-        "imageUrl" : "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
-    },
-    {
-        "activity": "Watering",
-        "location": "Backyard",
-        "DueDate": "7/12/2017",
-        "Employee": "Amir",
-        "imageUrl" : "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
+        "imageUrl": "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
     },
     {
         "activity": "Fertilization & Herbicides",
         "location": "Backyard",
-        "DueDate": "17/12/2017",
+        "fromdate": "2017-07-01",
+        "todate": "2017-07-01",
         "Employee": "Ariel",
-        "imageUrl" : "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
+        "imageUrl": "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
     },
     {
         "activity": "Trimming (grass or plants)",
         "location": "Front garden",
-        "DueDate": "27/11/2017",
+        "fromdate": "2017-07-01",
+        "todate": "2017-07-01",
         "Employee": "Orly",
-        "imageUrl" : "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
-        
+        "imageUrl": "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
+
     },
     {
         "activity": "Planting & Sowing",
         "location": "Backyard",
-        "DueDate": "17/11/2017",
+        "fromdate": "2017-07-01",
+        "todate": "2017-07-01",
         "Employee": "Ariel",
-        "imageUrl" : "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
+        "imageUrl": "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
     },
     {
         "activity": "Fruit-picking",
         "location": "Backyard",
-        "DueDate": "30/12/2017",
+        "fromdate": "2017-07-01",
+        "todate": "2017-07-01",
         "Employee": "Amir",
-        "imageUrl" : "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
-        
+        "imageUrl": "http://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/c0.37.1080.1080/17438558_192469144582319_1152478392830918656_n.jpg?ig_cache_key=MTQ3NTg0MDMxNjE4ODA0ODY4NA%3D%3D.2.c"
+
     }
 ]

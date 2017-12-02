@@ -1,19 +1,19 @@
 <div class="container">
     <div class="jumbotron text-center">
         <h1>Employee Main Page</h1>
-        <h2>Hello {{user.firstName+' '}}{{user.lastName}}</h2>
+        <h2>Hello {{user.firstName}} {{user.lastName}}</h2>
         <h2> Here are your future tasks :</h2>
     </div>
-<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="task in taskArr" >
-    
-    <div class="well task-item" >
-        
-        <img ng-src="{{task.imageUrl}}" class="img-responsive" alt="Image">
-        <h3>what?:{{task.activity}}</h3>
-        <p>where?:{{task.location}}</p>
-        <p>when? :{{task.dueDate}}</p>
-        <p>employee?: {{task.Employee}}</p>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4" ng-repeat="task in taskArr">
+
+        <div class="well task-item">
+
+            <img ng-src="{{task.imageUrl}}" class="img-responsive" alt="Image">
+            <h3>What?: {{task.activity}}</h3>
+            <p>Where?: {{task.location}}</p>
+            <p>When?: {{task.todate}}</p>
+            <p>Reponsible?: {{task.Employee}}</p>
+        </div>
+
     </div>
-    
-</div>
 </div>
