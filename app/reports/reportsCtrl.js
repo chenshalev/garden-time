@@ -15,5 +15,13 @@ gardenApp.controller("reportsCtrl", function ($scope, $log, $http, $location, ac
         }, function myError(response) {
             alert("error" + JSON.stringify(response.status));
         });
+
+        $scope.openTask= function (task) {
+                var taskIndex = $scope.taskArr.indexOf(task);
         
+                // Updating the URL
+                $location.path("/taskdetails/" + taskIndex)
+              }          
+
+
     });

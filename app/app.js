@@ -1,6 +1,6 @@
 var gardenApp = angular.module("gardenApp", ["ngRoute"]);
 
-gardenApp.config(function($routeProvider) {
+gardenApp.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "app/home/home.html",
@@ -46,7 +46,12 @@ gardenApp.config(function($routeProvider) {
         .when("/reports", {
             templateUrl: "app/reports/reports.html",
             controller: "reportsCtrl"
-           })
+        })
+        .when("/taskdetails/:index", {
+            templateUrl: "app/newTask/newTask.html",
+            controller: "newTaskCtrl"
+        })
+
 
 
 })

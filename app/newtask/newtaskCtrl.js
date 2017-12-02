@@ -1,9 +1,15 @@
-gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, activeUser, tasks) {
+gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, activeUser, tasks,$routeParams) {
     $scope.user = activeUser.get();
     $scope.taskArr = [];
     if (!activeUser.isLoggedIn()) {
         $location.path("/");
         return;
+    }
+
+    
+
+    if ($routeParams.index) {
+        $scope.task = tasks.getTaskById($routeParams.index);
     }
 
     $http.get("app/model/data/json/activity.json").then(function mySuccess(response) {

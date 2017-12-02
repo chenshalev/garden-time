@@ -51,6 +51,9 @@ gardenApp.factory("tasks", function(Task) {
     var removeAll = function() {
         taskArr = [];
     }
+    function getTaskById(index) {
+        return taskArr[index];
+    }
 
     return {
         add: add,
@@ -59,6 +62,7 @@ gardenApp.factory("tasks", function(Task) {
         load: load,
         getAll: getAll,
         get: get,
-        removeAll: removeAll
+        removeAll: removeAll,
+        getTaskById:getTaskById
     }
 })
