@@ -19,7 +19,13 @@
                                             .navbar {
                                                 font-family: 'Amaranth', sans-serif;
                                                 font-size: 1em;
+                                                margin-top:0;
                                             }
+                                            .homejumbo {
+                                                margin-top:0;
+                                                margin-bottom:0;
+                                                padding-top:0;
+                                             }
                                             
                                             .openActivity {
                                                 cursor: pointer;
@@ -31,6 +37,8 @@
                                             
                                             .login {
                                                 background-color: rgba(89, 145, 89, 0.685);
+                                                padding-top:0;
+                                                margin-top: 0;
                                             }
                                             
                                             .body {

@@ -45,7 +45,8 @@ gardenApp.config(function($routeProvider) {
         })
         .when("/reports", {
             templateUrl: "app/reports/reports.html",
-        })
+            controller: "reportsCtrl"
+           })
 
 
 })
