@@ -1,10 +1,9 @@
 <div class="container">
 
     <div class="jumbotron text-center">
-        
-        <h1 ng-show="false">Open New Task</h1>
-        <h1 ng-show="false">Task Report</h1>
-        <h1 ng-show="true">Task View</h1>
+        <h1 ng-show="query===0">Open New Task</h1>
+        <h1 ng-show="query===1">Task Report</h1>
+        <h1 ng-show="query===2">Task View</h1>
     </div>
 
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -85,9 +84,9 @@
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <div class="pull-right">
-                        <button type="submit" class="btn btn-default" ng-click="cancel()" ng-disabled="query">Cancel</button>
-                        <button type="submit" class="btn btn-success" ng-click="create()" ng-disabled="query">Create</button>
-                        <button type="submit" class="btn btn-success" ng-click="Done()" ng-disabled="query">Done</button>
+                        <button type="submit" class="btn btn-default" ng-click="cancel()" ng-show="query===0">Cancel</button>
+                        <button type="submit" class="btn btn-success" ng-click="create()" ng-show="query===0">Create</button>
+                        <button type="submit" class="btn btn-success" ng-click="Done()" ng-show="query===2">Done</button>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
     $scope.user = activeUser.get();
 
     // http call to get data from json
-
+    $scope.taskArr=[];
     $http.get("app/model/data/json/tasks.json").then(function mySuccess(response) {
         // Updating the service with the data
         tasks.load(response.data);
@@ -17,13 +17,19 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
         for (var index = 0; index < taskArr.length; index++) {
             if (taskArr[index].Employee === $scope.user.firstName) {
                 tasktemp.push(taskArr[index]);
-   
             }
         }
-        $scope.taskArr=taskArr;
-       ///just for now!!!-to take it off!!! $scope.taskArr=tasktemp;
+        $scope.taskArr=tasktemp;
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
+
+    $scope.openTask= function (task) {
+        var taskIndex = $scope.taskArr.indexOf(task);
+
+        // Updating the URL
+        $location.path("/taskdetails/" + taskIndex+"E")
+      }          
+
 
 });

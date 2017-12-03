@@ -18,5 +18,12 @@ gardenApp.controller("managerMainCtrl", function ($scope, $log, $http, $location
     $scope.openActivity = function (activity) {
         $location.path("/" + activity.window);
     }
+    $scope.openTask= function (task) {
+        var taskIndex = $scope.taskArr.indexOf(task);
+
+        // Updating the URL
+        $location.path("/taskdetails/" + taskIndex)
+      }          
+
 
 });
