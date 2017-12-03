@@ -13,9 +13,15 @@ body{
 
 #navgarden {
     margin:0;
+    color:white;
+    background-color: green;
+    width:100%;
+    
 }
 .navbar-default .navbar-nav>li>a {
     color:green;
+    color:white;
+    
 }
 .navbar-default .navbar-nav>li>a:hover {
     color:rgb(12, 247, 12);
@@ -71,10 +77,18 @@ body{
 .openActivity img {
   width:100%;
 }    
-
+.newtask {
+    font-size:13px;
+}
+.newtask>.jumbotron {
+    padding:0;
+}
 .footer-bottom {
 position:fixed;
 bottom:0;
+color:white;
+background-color: green;
+width:100%;
 }
 
                                            

@@ -59,6 +59,14 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
     $scope.cancel = function () {
         $location.path("/newTask");
     }
+    $scope.Done = function (task) {
+        var taskIndex = $scope.taskArr.indexOf(task);
+        task.completed="2018-01-01";
+        tasks.update(taskIndex,task);
+        alert("Thank You!!");
+        $location.path("/employeeMain");
+    }
+
 
     $scope.create = function () {
         tasks.add($scope.task);
