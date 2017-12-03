@@ -6,8 +6,6 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
     }
     $scope.user = activeUser.get();
 
-    // http call to get data from json
-    $scope.taskArr=[];
     $http.get("app/model/data/json/tasks.json").then(function mySuccess(response) {
         // Updating the service with the data
         tasks.load(response.data);
