@@ -1,9 +1,9 @@
 <div class="container">
 
     <div class="jumbotron text-center">
-   
+
         <h1>Reports-Task review </h1>
-   
+
     </div>
 
     <div class="table-responsive col-xs-12 col-sm-12 col-md-7 col-lg-7 ">
@@ -13,6 +13,7 @@
                     <th>Task Name</th>
                     <th>Date</th>
                     <th>Completed</th>
+                    <th>Employee</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,9 +21,11 @@
                     <td>{{task.name}}</td>
                     <td>{{task.fromdate|date}}</td>
                     <td>{{task.datedone|date}}</td>
+                    <td>{{task.Employee}}</td>
                 </tr>
             </tbody>
             </h4>
         </table>
 
     </div>
+</div>
