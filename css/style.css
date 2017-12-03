@@ -17,6 +17,10 @@ body{
 .navbar-default .navbar-nav>li>a {
     color:green;
 }
+.navbar-default .navbar-nav>li>a:hover {
+    color:rgb(12, 247, 12);
+    font-size:150%;
+}
 .container .jumbotron {
     font-family: 'Amaranth', sans-serif;
     font-size: 4em;
@@ -54,22 +58,16 @@ body{
     margin-top: 0;
 }
 
-.body {
-    background-image: url("img_tree.png");
-    background-repeat: no-repeat;
-}
+
+
 .employeetask {
-    /*background-image:"http://sr.photos3.fotosearch.com/bthumb/CSP/CSP894/k8941881.jpg"*/
+
     background-color: yellow;
 }
 .table-hover {
     background-color: paleturquoise;
 
 }
-.table-hdr {
-    
-
-}    
 .openActivity img {
   width:100%;
 }                                        
