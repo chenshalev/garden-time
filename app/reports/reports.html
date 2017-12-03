@@ -1,39 +1,28 @@
 <div class="container">
 
-    <div class="jumbotron center-text">
+    <div class="jumbotron text-center">
+   
         <h1>Reports-Task review </h1>
-        <h2>Hello {{user.firstName}} {{user.lastName}} </h2>
+   
     </div>
-    <div class="table-responsive">
+
+    <div class="table-responsive col-xs-12 col-sm-12 col-md-7 col-lg-7 ">
         <table class="table table-hover">
             <thead class="table-hdr">
                 <tr>
-                    <th>task name</th>
-                    <th>description</th>
-                    <th>from date</th>
-                    <th>to date</th>
-                    <th>location</th>
-                    <th>employee</th>
-                    <th>activity</th>
-                    <th>remarks</th>
-                    <th>plant</th>
+                    <th>Task Name</th>
+                    <th>Date</th>
+                    <th>Completed</th>
                 </tr>
             </thead>
             <tbody>
                 <tr ng-repeat="task in taskArr" ng-dblclick="openTask(task)">
                     <td>{{task.name}}</td>
-                    <td>{{task.description}}</td>
-                    <td>{{task.fromdate}}</td>
-                    <td>{{task.todate}}</td>
-                    <td>{{task.location}}</td>
-                    <td>{{task.employee}}</td>
-                    <td>{{task.activity}}</td>
+                    <td>{{task.fromdate|date}}</td>
                     <td>{{task.datedone}}</td>
-                    <td>{{task.remarks}}</td>
-                    <td>{{task.plant}}</td>
-                 </tr>
+                </tr>
             </tbody>
+            </h4>
         </table>
-    </div>
 
-</div>
+    </div>
