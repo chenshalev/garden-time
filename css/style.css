@@ -62,10 +62,10 @@ body{
 
 .employeetask {
 
-    background-color: yellow;
+    background-color: rgba(154, 248, 56, 0.55);
 }
 .table-hover {
-    background-color: paleturquoise;
+    background-color: rgba(79, 143, 13, 0.40);
 
 }
 .openActivity img {
