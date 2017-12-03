@@ -9,6 +9,7 @@
         "Fertilization Material":"20:20:20",
         "Fertilization Time begin":"10",
         "Fertilization Time ends":"11",
+        "Planting & Sowing":"",
         "Trimming":"03",
         "Watering":"20 liters X 2 a week"
     },
@@ -23,6 +24,7 @@
         "Fertilization Material":"20:20:20",
         "Fertilization Time begin":"10",
         "Fertilization Time ends":"11",
+        "Planting & Sowing":"",
         "Trimming":"03",
         "Watering":"20 liters X 2 a week"
 
@@ -37,6 +39,7 @@
         "Fertilization Material":"20:20:20",
         "Fertilization Time begin":"09",
         "Fertilization Time ends":"10",
+        "Planting & Sowing":"",
         "Trimming":"03",
         "Watering":"20 liters X 2 a week"
     }, {
@@ -50,6 +53,7 @@
         "Fertilization Material":"20:20:20",
         "Fertilization Time begin":"07",
         "Fertilization Time ends":"09",
+        "Planting & Sowing":"",
         "Trimming":"03",
         "Watering":"20 liters X 2 a week"
     }, {
@@ -63,6 +67,7 @@
         "Fertilization Material":"20:20:20",
         "Fertilization Time begin":"10",
         "Fertilization Time ends":"11",
+        "Planting & Sowing":"",        
         "Trimming":"03",
         "Watering":"20 liters X 2 a week"
     }, 
@@ -92,6 +97,7 @@
         "Fertilization Material":"20:20:20",
         "Fertilization Time begin":"10",
         "Fertilization Time ends":"11",
+        "Planting & Sowing":"",        
         "Trimming":"03",
         "Watering":"20 liters X 2 a week"
     }

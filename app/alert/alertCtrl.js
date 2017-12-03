@@ -1,24 +1,16 @@
-gardenApp.controller("alertCtrl", function ($scope, $log, $http, $location, activeUser, plants) {
+gardenApp.controller("alertCtrl", function ($scope, $log, $http, $location, activeUser) {
     
         if (!activeUser.isLoggedIn()) {
             $location.path("/");
             return;
         }
         $scope.user = activeUser.get();
-        var wasEverLoaded=plants.getwasEverLoaded();
-        if (!wasEverLoaded) {
-        $http.get("app/model/data/json/tasks.json").then(function mySuccess(response) {
+        $http.get("app/model/data/json/plants.json").then(function mySuccess(response) {
             // Updating the service with the data
-            tasks.load(response.data);
-            // Getting the data from the service
-            taskArr=tasks.getAll();
-            $scope.taskArr=taskArr;
+            $scope.plantsArr = response.data;
         }, function myError(response) {
             alert("error" + JSON.stringify(response.status));
         });
-    }else {
-        $scope.taskArr=taskArr;
-    }
 
         $scope.openTask= function (task) {
                 var taskIndex = $scope.taskArr.indexOf(task);
