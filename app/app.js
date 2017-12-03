@@ -36,22 +36,29 @@ gardenApp.config(function ($routeProvider) {
             templateUrl: "app/activities/tasks.html",
             controller: "tasksCtrl"
         })
-        .when("/newTask", {
-            templateUrl: "app/newTask/newTask.html",
-            controller: "newTaskCtrl"
-        })
-        .when("/about", {
+         .when("/about", {
             templateUrl: "app/about/about.html",
         })
         .when("/reports", {
             templateUrl: "app/reports/reports.html",
             controller: "reportsCtrl"
         })
-        .when("/taskdetails/:index", {
+        .when("/newTask", {
             templateUrl: "app/newTask/newTask.html",
-            controller: "newTaskCtrl"
+            controller: "newTaskCtrl",
+            kindOfTask:"newtask"
         })
-        .when("/alert", {
+     .when("/taskdetails/:index", {
+            templateUrl: "app/newTask/newTask.html",
+            controller: "newTaskCtrl",
+            kindOfTask:"reports"
+        })
+         .when("/taskemployee/:index", {
+            templateUrl: "app/newTask/newTask.html",
+            controller: "newTaskCtrl",
+            kindOfTask:"employee"
+        })
+ .when("/alert", {
             templateUrl: "app/alert/alert.html",
             controller: "alertCtrl"
         })

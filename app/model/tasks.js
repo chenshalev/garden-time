@@ -1,5 +1,5 @@
 // Shared Recipe Constructor
-gardenApp.factory("Task", function() {
+gardenApp.factory("Task", function () {
     function Task(plainObject) {
         this.name = plainObject.name;
         this.description = plainObject.description;
@@ -20,57 +20,93 @@ gardenApp.factory("Task", function() {
 });
 
 
-gardenApp.factory("tasks", function(Task) {
+gardenApp.factory("tasks", function (Task, activeUser) {
     var taskArr = [];
+    var taskEmp = [];
+
 
     var wasEverLoaded = false;
+    var wasEverLoadedEmp = false;
 
-    var add = function(task) {
+    var user = activeUser.get();
+
+    var add = function (task) {
         taskArr.push(task);
     }
 
-    var update = function(index, task) {
+    var update = function (index, task) {
         taskArr[index] = task;
     }
+    var updateEmp = function (index, task) {
+        taskEmp[index] = task;
+    }
 
-    var remove = function(index) {
+    var remove = function (index) {
         taskArr.splice(index, 1);
     }
- 
-    var load = function(taskPlainObjectArr) {
+
+    var removeEmp = function (index) {
+        taskEmp.splice(index, 1);
+    }
+
+    var load = function (taskPlainObjectArr) {
         for (var i = 0; i < taskPlainObjectArr.length; i++) {
             taskArr.push(new Task(taskPlainObjectArr[i]))
         }
         wasEverLoaded = true;
     }
 
-    var getAll = function() {
+    var loadEmp = function (taskPlainObjectArr) {
+        for (var i = 0; i < taskPlainObjectArr.length; i++) {
+            // if (taskPlainObjectArr[i].Employee != user.firstName) {
+
+            //  } else {
+            taskEmp.push(new Task(taskPlainObjectArr[i]));
+        }
+        wasEverLoadedEmp = true;
+    }
+    var getAll = function () {
         return taskArr;
     }
+    var getAllEmp = function () {
+        return taskEmp;
+    }
 
-    var get = function(index) {
+    var get = function (index) {
         return taskArr[index];
     }
 
-    var removeAll = function() {
+    var removeAll = function () {
         taskArr = [];
     }
     function getTaskById(index) {
         return taskArr[index];
     }
+    function getTaskEmpById(index) {
+        return taskEmp[index];
+    }
     function getwasEverLoaded() {
         return wasEverLoaded;
+    }
+    function getwasEverLoadedEmp() {
+        return wasEverLoadedEmp;
     }
 
     return {
         add: add,
         update: update,
+        updateEmp: updateEmp,
         remove: remove,
+        removeEmp: removeEmp,
         load: load,
+        loadEmp: loadEmp,
         getAll: getAll,
+        getAllEmp: getAllEmp,
         get: get,
         removeAll: removeAll,
-        getTaskById:getTaskById,
-        getwasEverLoaded: getwasEverLoaded
+        getTaskById: getTaskById,
+        getTaskEmpById: getTaskEmpById,
+        getwasEverLoaded: getwasEverLoaded,
+        getwasEverLoadedEmp: getwasEverLoadedEmp
     }
 })
