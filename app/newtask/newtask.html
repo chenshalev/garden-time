@@ -1,8 +1,10 @@
 <div class="container">
 
-    <div class="jumbotron center-text">
-        <h1>Open new Task window</h1>
-        <h2>Hello {{user.firstName}} {{user.lastName}} </h2>
+    <div class="jumbotron text-center">
+        
+        <h1 ng-show="false">Open New Task</h1>
+        <h1 ng-show="false">Task Report</h1>
+        <h1 ng-show="false">Task View</h1>
     </div>
 
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -10,51 +12,56 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="name">Name:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" placeholder="Enter Task name" ng-model="task.name">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Task name" ng-model="task.name" ng-disabled="query">
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="desc">Description:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="desc" placeholder="Enter Task description" ng-model="task.description">
+                    <input type="text" class="form-control" id="desc" placeholder="Enter Task description" ng-model="task.description" ng-disabled="query">
                 </div>
             </div>
             <div class="form-group" class="pull-left">
                 <label class="control-label col-sm-2" for="activity">Choose Activity:</label>
                 <div class="col-sm-10">
-                    <select ng-model="task.activity" ng-options="y.activity for (x, y) in activityArr">
-                </select>
+                    <select ng-model="task.activity" ng-options="y.activity for (x, y) in activityArr" ng-disabled="query">
+                    </select>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="location">Choose Location:</label>
                 <div class="col-sm-10">
-                    <select ng-model="task.location" ng-options="y.name for (x, y) in locationArr">
-                  </select>
+                    <select ng-model="task.location" ng-options="y.name for (x, y) in locationArr" ng-disabled="query">
+                    </select>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="plants">Choose Plant:</label>
                 <div class="col-sm-10">
-                    <select ng-model="task.plant" ng-options="y.name for (x, y) in plantsArr">
+                    <select ng-model="task.plant" ng-options="y.name for (x, y) in plantsArr" ng-disabled="query">
                     </select>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="employee">Choose Employee:</label>
                 <div class="col-sm-10">
-                    <select ng-model="task.employee" ng-options="y.firstName for (x, y) in employeeArr">
-                      </select>
+                    <select ng-model="task.employee" ng-options="y.firstName for (x, y) in employeeArr" ng-disabled="query">
+                    </select>
                 </div>
             </div>
-            <div class="form-group" class="col-sm-10" >
-                        <label> From: <input type="date" ng-model="task.fromdate"/></label>
-                        <label> To: <input type="date" ng-model="task.todate" /></label>
-                    </div>
-              
             <div class="form-group" class="col-sm-10">
-                <label>Synchronized with Calendar: <input type="radio" ng-model="task.calendar" value="Yes">yes
-                      <input type="radio" ng-model="task.calendar" value="no">No</label>
+                <label> From:
+                    <input type="date" ng-model="task.fromdate" />
+                </label>
+                <label> To:
+                    <input type="date" ng-model="task.todate" />
+                </label>
+            </div>
+
+            <div class="form-group" class="col-sm-10">
+                <label>Synchronized with Calendar:
+                    <input type="radio" ng-model="task.calendar" value="Yes" ng-disabled="query">yes
+                    <input type="radio" ng-model="task.calendar" value="no">No</label>
                 <!--<div ng-switch="myVar">
                           <div ng-switch-when="no">
                           </div>
@@ -66,21 +73,21 @@
             <div class="form-group">
                 <label class="control-label col-sm-2" for="Remarks">Remarks:</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control" rows="5" id="Remarks" ng-model="task.remarks"></textarea>
+                    <textarea class="form-control" rows="5" id="Remarks" ng-model="task.remarks" ng-disabled="query"></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-sm-2" for="imageUrl">Image URL:</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="imageUrl" placeholder="Enter image URL" ng-model="task.imageurl">
+                    <input type="text" class="form-control" id="imageUrl" placeholder="Enter image URL" ng-model="task.imageurl" ng-disabled="query">
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <div class="pull-right">
-                        <button type="submit" class="btn btn-default" ng-click="cancel()">Cancel</button>
-                        <button type="submit" class="btn btn-success" ng-click="create()">Create</button>
-                        <button type="submit" class="btn btn-success" ng-click="Done()">Done</button>
+                        <button type="submit" class="btn btn-default" ng-click="cancel()" ng-disabled="query">Cancel</button>
+                        <button type="submit" class="btn btn-success" ng-click="create()" ng-disabled="query">Create</button>
+                        <button type="submit" class="btn btn-success" ng-click="Done()" ng-disabled="query">Done</button>
                     </div>
                 </div>
             </div>

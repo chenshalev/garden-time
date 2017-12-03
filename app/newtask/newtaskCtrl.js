@@ -6,19 +6,24 @@ gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, act
         return;
     }
 
+    $scope.taskreport=false;
+    $scope.tasknew=false;
+    $scope.taskquery=false;
     
 
     if ($routeParams.index) {
         $scope.task = tasks.getTaskById($routeParams.index);
+        $scope.query=true;
     }
-
+    else {
     $http.get("app/model/data/json/activity.json").then(function mySuccess(response) {
         // Updating the service with the data
         $scope.activityArr = response.data;
+        $scope.task.activity=$scope.activityArr[0];
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
-
+ 
     $http.get("app/model/data/json/location.json").then(function mySuccess(response) {
         // Updating the service with the data
         $scope.locationArr = response.data;
@@ -39,7 +44,7 @@ gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, act
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
-
+}
     $scope.fromdate = new Date();
     $scope.todate = new Date();
 
