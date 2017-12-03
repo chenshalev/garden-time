@@ -1,0 +1,30 @@
+<div class="container">
+    
+        <div class="jumbotron text-center">
+       
+            <h1>Alerts & Recommendations review </h1>
+       
+        </div>
+    
+        <div class="table-responsive col-xs-12 col-sm-12 col-md-7 col-lg-7 ">
+            <table class="table table-hover">
+                <thead class="table-hdr">
+                    <tr>
+                        <th>Alert Name</th>
+                        <th>Date</th>
+                        <th>Completed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pointer" ng-repeat="task in taskArr" ng-click="openTask(task)">
+                        <td>{{task.name}}</td>
+                        <td>{{task.fromdate|date}}</td>
+                        <td>{{task.datedone|date}}</td>
+                    </tr>
+                </tbody>
+                </h4>
+            </table>
+    
+        </div>
+            
+</div>
