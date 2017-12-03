@@ -16,10 +16,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="task in taskArr" ng-dblclick="openTask(task)">
+                <tr class="pointer" ng-repeat="task in taskArr" ng-click="openTask(task)">
                     <td>{{task.name}}</td>
                     <td>{{task.fromdate|date}}</td>
-                    <td>{{task.datedone}}</td>
+                    <td>{{task.datedone|date}}</td>
                 </tr>
             </tbody>
             </h4>
