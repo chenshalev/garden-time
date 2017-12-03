@@ -15,8 +15,17 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
             // Updating the service with the data
             tasks.loadEmp(response.data);
             // Getting the data from the service
+
             taskEmp = tasks.getAllEmp();
+            var taskxx=taskEmp;
+            for (var i=0;i<taskxx.length;i++){
+                if (taskxx[i].Employee!=$scope.user.firstName) {
+                    index=taskEmp.indexOf(taskxx[i]);
+                     tasks.removeEmp(index);
+                }
+            }
             $scope.taskEmp = taskEmp;
+            
         }, function myError(response) {
             alert("error" + JSON.stringify(response.status));
         });
