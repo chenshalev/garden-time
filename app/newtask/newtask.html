@@ -4,7 +4,7 @@
         
         <h1 ng-show="false">Open New Task</h1>
         <h1 ng-show="false">Task Report</h1>
-        <h1 ng-show="false">Task View</h1>
+        <h1 ng-show="true">Task View</h1>
     </div>
 
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
@@ -61,7 +61,7 @@
             <div class="form-group" class="col-sm-10">
                 <label>Synchronized with Calendar:
                     <input type="radio" ng-model="task.calendar" value="Yes" ng-disabled="query">yes
-                    <input type="radio" ng-model="task.calendar" value="no">No</label>
+                    <input type="radio" ng-model="task.calendar" value="no" ng-disabled="query">No</label>
                 <!--<div ng-switch="myVar">
                           <div ng-switch-when="no">
                           </div>

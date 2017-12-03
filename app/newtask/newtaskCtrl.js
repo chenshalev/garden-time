@@ -6,16 +6,18 @@ gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, act
         return;
     }
 
-    $scope.taskreport=false;
     $scope.tasknew=false;
+    $scope.taskreport=false;
     $scope.taskquery=false;
     
+    $scope.task={};
 
     if ($routeParams.index) {
         $scope.task = tasks.getTaskById($routeParams.index);
         $scope.query=true;
     }
-    else {
+
+
     $http.get("app/model/data/json/activity.json").then(function mySuccess(response) {
         // Updating the service with the data
         $scope.activityArr = response.data;
@@ -27,6 +29,7 @@ gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, act
     $http.get("app/model/data/json/location.json").then(function mySuccess(response) {
         // Updating the service with the data
         $scope.locationArr = response.data;
+        $scope.task.location=$scope.locationArr[0];
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
@@ -34,6 +37,7 @@ gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, act
     $http.get("app/model/data/json/plants.json").then(function mySuccess(response) {
         // Updating the service with the data
         $scope.plantsArr = response.data;
+        $scope.task.plant=$scope.plantsArr[0];
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
@@ -41,10 +45,11 @@ gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, act
     $http.get("app/model/data/json/users.json").then(function mySuccess(response) {
         // Updating the service with the data
         $scope.employeeArr = response.data;
+        $scope.task.employee=$scope.employeeArr[0];
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
-}
+
     $scope.fromdate = new Date();
     $scope.todate = new Date();
 
@@ -54,7 +59,6 @@ gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, act
 
     $scope.create = function() {
         tasks.add($scope.task);
-        alert("Saved!" + JSON.stringify($scope.taskArr));
         $location.path("/newTask");
     }
 

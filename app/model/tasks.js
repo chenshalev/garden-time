@@ -12,6 +12,7 @@ gardenApp.factory("Task", function() {
         this.imageUrl = plainObject.imageurl;
         this.remarks = plainObject.remarks;
         this.calendar = plainObject.calendar;
+        this.datedone = new Date(plainObject.datedone);
     };
 
 
@@ -21,6 +22,8 @@ gardenApp.factory("Task", function() {
 
 gardenApp.factory("tasks", function(Task) {
     var taskArr = [];
+
+    var wasEverLoaded = false;
 
     var add = function(task) {
         taskArr.push(task);
@@ -33,11 +36,12 @@ gardenApp.factory("tasks", function(Task) {
     var remove = function(index) {
         taskArr.splice(index, 1);
     }
-
+ 
     var load = function(taskPlainObjectArr) {
         for (var i = 0; i < taskPlainObjectArr.length; i++) {
             taskArr.push(new Task(taskPlainObjectArr[i]))
         }
+        wasEverLoaded = true;
     }
 
     var getAll = function() {
@@ -54,6 +58,9 @@ gardenApp.factory("tasks", function(Task) {
     function getTaskById(index) {
         return taskArr[index];
     }
+    function getwasEverLoaded() {
+        return wasEverLoaded;
+    }
 
     return {
         add: add,
@@ -63,6 +70,7 @@ gardenApp.factory("tasks", function(Task) {
         getAll: getAll,
         get: get,
         removeAll: removeAll,
-        getTaskById:getTaskById
+        getTaskById:getTaskById,
+        getwasEverLoaded: getwasEverLoaded
     }
 })
