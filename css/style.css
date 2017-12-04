@@ -69,6 +69,7 @@
                                         background-color: rgba(133, 221, 133, 0.753);
                                         padding-top: 0;
                                         margin-top: 0;
+                                        margin-bottom: 5em;;
                                         border: 4px solid rgb(67, 128, 67);
                                         border-radius: 20px;
                                     }
@@ -107,21 +108,18 @@
                                         color: white;
                                         background-color: rgb(67, 128, 67);
                                         width: 100%;
+                                        font-size:15px;
                                     }
                                     
-                                    .pull-right>a {
+                                    a {
                                         text-decoration: none;
                                         color: white;
                                     }
-                                    
+  
                                     .contact {
-                                        padding-right: 30px;
+                                        padding-left:30px;
                                     }
-                                    
-                                    #logo {
-                                        width: 150;
-                                        height: 150;
-                                    }
+                                
                                     
                                     .celsius:before {
                                         content: ' \00B0';
