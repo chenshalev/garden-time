@@ -23,6 +23,7 @@ gardenApp.controller("WeatherCtrl", function ($scope, $log, $http, $location, ac
                 $scope.temp = result.main.temp ;
                 $scope.temp=($scope.temp-32) * 5 / 9;
                 $scope.temp=Math.round($scope.temp);
+                alert(golink);
   
             });
         }
