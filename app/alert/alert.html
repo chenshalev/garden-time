@@ -1,28 +1,39 @@
 <div class="container">
-
     <div class="jumbotron text-center">
-
-        <h1>Alerts & Recommendations review </h1>
-
+        <h1>Alerts & Recommendations Review </h1>
+    <h3>Order By: <select ng-model="orderProp">
+        <option value="name">Plant Name</option>
+        <option value="FruitingTimeBegins">Fruiting Month Begins</option>
+        <option value="FruitingTimeEnds">Fruiting Month Ends</option>
+        <option value="FertilizationMaterial">Fertilization Material</option>
+        <option value="FertilizationTimeBegin">Fertilization Month Begins</option>
+        <option value="FertilizationTimeEnds">Fertilization Month Ends</option>
+        <option value="PlantingSowing">Planting & Sowing</option>
+        <option value="Trimming">Trimming</option>
+        <option value="Watering">Watering</option>
+    </select></h3>
+    <div class="row">
+        <button type="button" class="btn btn-default" ng-click="newTask()">Open a New Task</button>
+        <button type="button" class="btn btn-default" ng-click="reports()">Review Tasks</button>
     </div>
-
-    <div class="table-responsive col-xs-12 col-sm-12 col-md-7 col-lg-7 ">
+    </div>
+    <div class="table-responsive col-xs-12 col-sm-12 col-md-7 col-lg-12 ">
         <table class="table table-hover">
             <thead class="table-hdr">
                 <tr>
-                    <th>Alert Name</th>
-                    <th>Fruiting Month Begins</th>
-                    <th>Fruiting Month Ends</th>
-                    <th>Fertilization Material</th>
-                    <th>Fertilization Month Begin</th>
-                    <th>Fertilization Month Ends</th>
-                    <th>Planting & Sowing</th>
-                    <th>Trimming</th>
-                    <th>Watering</th>
+                    <th ng-click="sortBy('name')">Plant Name</th>
+                    <th ng-click="sortBy('FruitingTimeBegins')">Fruiting Month Begins</th>
+                    <th ng-click="sortBy('FruitingTimeEnds')">Fruiting Month Ends</th>
+                    <th ng-click="sortBy('FertilizationMaterial')">Fertilization Material</th>
+                    <th ng-click="sortBy('FertilizationTimeBegin')">Fertilization Month Begins</th>
+                    <th ng-click="sortBy('FertilizationTimeEnds')">Fertilization Month Ends</th>
+                    <th ng-click="sortBy('PlantingSowing')">Planting & Sowing</th>
+                    <th ng-click="sortBy('Trimming')">Trimming</th>
+                    <th ng-click="sortBy('Watering')">Watering</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="pointer" ng-repeat="plant in plantsArr">
+                <tr class="pointer" ng-repeat="plant in plantsArr | orderBy: orderProp : true">
                     <td>{{plant.name}}</td>
                     <td>{{plant.FruitingTimeBegins}}</td>
                     <td>{{plant.FruitingTimeEnds}}</td>
@@ -32,12 +43,9 @@
                     <td>{{plant.PlantingSowing}}</td>
                     <td>{{plant.Trimming}}</td>
                     <td>{{plant.Watering}}</td>
-
                 </tr>
             </tbody>
-            </h4>
         </table>
 
     </div>
-
-</div>
+</div>    

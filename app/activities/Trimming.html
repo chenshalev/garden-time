@@ -1,7 +1,29 @@
 <div class="container">
-        
-            <div class="jumbotron center-text">
-                <h1>Trimming window</h1>
-                <h2>Hello {{user.firstName}}{{user.lastName}} </h2>
-            </div>
-        </div>
+    <div class="jumbotron text-center">
+        <h1>Trimming Tasks </h1>
+    <h3>Order By: <select ng-model="orderProp">
+        <option value="name">Plant Name</option>
+        <option value="Trimming">Trimming</option>
+    </select></h3>
+    <div class="row">
+        <button type="button" class="btn btn-default" ng-click="newTask()">Open a New Task</button>
+        <button type="button" class="btn btn-default" ng-click="reports()">Review Tasks</button>
+    </div>
+    </div>
+    <div class="table-responsive col-xs-12 col-sm-12 col-md-7 col-lg-12 ">
+        <table class="table table-hover">
+            <thead class="table-hdr">
+                <tr>
+                    <th ng-click="sortBy('name')">Plant Name</th>
+                    <th ng-click="sortBy('Trimming')">Trimming</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="pointer" ng-repeat="plant in plantsArr | orderBy: orderProp : true">
+                    <td>{{plant.name}}</td>
+                    <td>{{plant.Trimming}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>    
