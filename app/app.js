@@ -82,10 +82,12 @@ gardenApp.config(function($routeProvider) {
             controller: "alertCtrl"
         })
         .when("/contact", {
-            templateUrl: "app/activities/contact.html",
+            templateUrl: "app/contact/contact.html",
+            controller: "contactCtrl"
         })
         .when("/links", {
-            templateUrl: "app/activities/links.html",
+            templateUrl: "app/links/links.html",
+            controller: "linksCtrl"
         })
 
 
