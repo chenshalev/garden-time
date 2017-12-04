@@ -1,39 +1,43 @@
-body{
-    background-color: #e6ffcc;
-    
+body {
+    background-color: #91db8d56;
 }
- bo.navbar {
+
+bo.navbar {
     margin-bottom: 0;
 }
 
 .navbar-default .navbar-brand:hover {
     font-family: "Pacifico";
-    color:white;
+    color: white;
 }
+
 .navbar-default .navbar-brand {
     font-family: "Pacifico";
-    color:rgba(30, 247, 61, 0.40);
+    color: rgba(30, 247, 61, 0.40);
 }
+
 #navgarden {
-    margin:0;
-    color:white;
-    background-color: green;
-    width:100%;
-    
+    margin: 0;
+    color: white;
+    background-color: rgb(67, 128, 67);
+    width: 100%;
 }
+
 .navbar-default .navbar-nav>li>a {
-    color:green;
-    color:white;
-    
+    color: green;
+    color: white;
 }
+
 .navbar-default .navbar-nav>li>a:hover {
-    color:rgb(12, 247, 12);
-    font-size:150%;
+    color: rgb(12, 247, 12);
+    font-size: 150%;
 }
+
 .container .jumbotron {
     font-family: 'Amaranth', sans-serif;
     font-size: 4em;
-    background-color:#e6eeff ;
+    background-color: #a5f2f75e;
+    color: rgba(5, 61, 19, 0.884);
 }
 
 .container {
@@ -44,14 +48,14 @@ body{
 .navbar {
     font-family: 'Amaranth', sans-serif;
     font-size: 1em;
-    margin-top:0;
-    
+    margin-top: 0;
 }
+
 .homejumbo {
-    margin-top:0;
-    margin-bottom:0;
-    padding-top:0;
- }
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+}
 
 .openActivity {
     cursor: pointer;
@@ -63,42 +67,43 @@ body{
 
 .login {
     background-color: rgba(89, 145, 89, 0.685);
-    padding-top:0;
+    padding-top: 0;
     margin-top: 0;
 }
 
-
-
 .employeetask {
-
     background-color: rgba(154, 248, 56, 0.55);
 }
-.table-hover {
-    background-color: rgba(79, 143, 13, 0.40);
 
+.table-hover {
+    background-color: rgba(145, 224, 157, 0.568);
 }
+
 .openActivity img {
-  width:100%;
-}    
+    width: 100%;
+}
+
 .newtask {
-    font-size:13px;
+    font-size: 13px;
 }
+
 .newtask>.jumbotron {
-    padding:0;
+    padding: 0;
 }
+
 .jumbotron {
-    padding:0;
+    padding: 0;
 }
 
 .footer-bottom {
-position:fixed;
-bottom:0;
-color:white;
-background-color: green;
-width:100%;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: rgb(67, 128, 67);
+    width: 100%;
 }
+
 #logo {
-    width:150;
-    height:150;
+    width: 150;
+    height: 150;
 }
-                                           
