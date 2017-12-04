@@ -127,6 +127,28 @@
                   <div class="pull-right">
                     <a href="mailto:chensha07@gmail.com">Contact Us</a>
                 </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav nav">
+
+                        <nav class="navbar navbar-default navbar-fixed-bottom-right" role="navigation">
+                            <a class="navbar-brand" href="#">Title</a>
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link</a>
+                                </li>
+
+
+                                <li ng-show="isLoggedIn()">
+                                    <a href="#!/links">Useful  Links</a>
+                                </li>
+                                <li ng-show="isLoggedIn()">
+                                    <a href="#!/contact">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
             </div>
         </div>
 
