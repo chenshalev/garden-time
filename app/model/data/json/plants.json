@@ -71,21 +71,6 @@
         "Watering": "20 liters X 2 a week"
     },
     {
-        "name": "Library",
-        "image": "https://www.artificialgrassliquidators.com/wp-content/uploads/2017/01/iStock_7308342_SMALL.jpg",
-        "link": "https://garden.org/",
-        "location": "Garden",
-        "Kind": "Index",
-        "FruitingTimeBegins": "",
-        "FruitingTimeEnds": "",
-        "FertilizationMaterial": "",
-        "FertilizationTimeBegin": "",
-        "FertilizationTimeEnds": "",
-        "PlantingSowing": "",
-        "Trimming": "",
-        "Watering": ""
-    },
-    {
         "name": "Mango",
         "image": "https://i.ebayimg.com/images/g/MW0AAOSwn25aEeYz/s-l1600.jpg",
         "link": "https://garden.org/plants/view/74352/Common-Mango-Mangifera-indica/",
