@@ -16,18 +16,28 @@ gardenApp.config(function ($routeProvider) {
         })
         .when("/Watering", {
             templateUrl: "app/activities/Watering.html",
+            controller: "alertCtrl"
+            
         })
         .when("/Fertilization", {
             templateUrl: "app/activities/Fertilization.html",
+            controller: "alertCtrl"
+            
         })
         .when("/Trimming", {
             templateUrl: "app/activities/Trimming.html",
+            controller: "alertCtrl"
+            
         })
         .when("/Fruit", {
             templateUrl: "app/activities/Fruit.html",
+            controller: "alertCtrl"
+            
         })
         .when("/Planting", {
             templateUrl: "app/activities/Planting.html",
+            controller: "alertCtrl"
+            
         })
         .when("/Settings", {
             templateUrl: "app/activities/Settings.html",

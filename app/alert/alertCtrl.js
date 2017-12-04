@@ -12,15 +12,16 @@ gardenApp.controller("alertCtrl", function ($scope, $log, $http, $location, acti
         alert("error" + JSON.stringify(response.status));
     });
 
-    $scope.openTask = function (task) {
-        var taskIndex = $scope.taskArr.indexOf(task);
+    $scope.newTask = function () {
 
-        // Updating the URL
-        $location.path("/alert/" + taskIndex)
+        $location.path("/newTask")
     }
     $scope.sortBy = function (prop) {
         $scope.orderProp = prop;
     }
-
+    $scope.reports = function () {
+        
+                $location.path("/reports")
+            }
 
 });

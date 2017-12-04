@@ -1,27 +1,44 @@
 <div class="container">
-
-    <div class="jumbotron center-text">
-        <h1>Fertilization window</h1>
-        <h2>Hello {{user.firstName}} {{user.lastName}} </h2>
+    
+    <div class="jumbotron text-center">
+    
+            <h1>Fertilization Tasks </h1>
+    
+    
+            <h3>Order By: <select ng-model="orderProp">
+            <option value="name">Plant Name</option>
+            <option value="FertilizationMaterial">Fertilization Material</option>
+            <option value="FertilizationTimeBegin">Fertilization Month Begins</option>
+            <option value="FertilizationTimeEnds">Fertilization Month Ends</option>
+        </select></h3>
+        <div class="row">
+            <button type="button" class="btn btn-default" ng-click="newTask()">Open a New Task</button>
+            <button type="button" class="btn btn-default" ng-click="reports()">Review Tasks</button>
+            
+        </div>
+    
     </div>
-    <div class="table-responsive col-xs-12 col-sm-12 col-md-7 col-lg-7 ">
-        <table class="table table-hover">
-            <thead class="table-hdr">
-                <tr>
-                    <th>Task Name</th>
-                    <th>Date</th>
-                    <th>Completed</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="pointer" ng-repeat="task in taskArr" ng-click="openTask(task)">
-                    <td>{{task.name}}</td>
-                    <td>{{task.fromdate|date}}</td>
-                    <td>{{task.datedone|date}}</td>
-                </tr>
-            </tbody>
-            </h4>
-        </table>
-
-    </div>
-</div>
+    
+    
+        <div class="table-responsive col-xs-12 col-sm-12 col-md-7 col-lg-12 ">
+            <table class="table table-hover">
+                <thead class="table-hdr">
+                    <tr>
+                        <th ng-click="sortBy('name')">Plant Name</th>
+                        <th ng-click="sortBy('FertilizationMaterial')">Fertilization Material</th>
+                        <th ng-click="sortBy('FertilizationTimeBegin')">Fertilization Month Begins</th>
+                        <th ng-click="sortBy('FertilizationTimeEnds')">Fertilization Month Ends</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pointer" ng-repeat="plant in plantsArr | orderBy: orderProp : true">
+                        <td>{{plant.name}}</td>
+                        <td>{{plant.FertilizationMaterial}}</td>
+                        <td>{{plant.FertilizationTimeBegin}}</td>
+                        <td>{{plant.FertilizationTimeEnds}}</td>
+                    </tr>
+                </tbody>
+                </h4>
+            </table>
+        </div>
+</div>    
