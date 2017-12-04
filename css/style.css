@@ -14,6 +14,7 @@ bo.navbar {
 .navbar-default .navbar-brand {
     font-family: "Pacifico";
     color: rgba(30, 247, 61, 0.40);
+    background-color: rgba(164, 243, 164, 0.281);
 }
 
 #navgarden {
@@ -24,6 +25,11 @@ bo.navbar {
 }
 
 .navbar-default .navbar-nav>li>a {
+<<<<<<< HEAD
+=======
+    color: green;
+    background-color: rgb(67, 128, 67);
+>>>>>>> f1fd8084928e2bc5d56dad4a88f67be23428efbd
     color: white;
 }
 
@@ -35,7 +41,7 @@ bo.navbar {
 .container .jumbotron {
     font-family: 'Amaranth', sans-serif;
     font-size: 4em;
-    background-color: #a5f2f75e;
+    background-color: #a8d1f3b4;
     color: rgba(5, 61, 19, 0.884);
 }
 
@@ -65,7 +71,7 @@ bo.navbar {
 }
 
 .login {
-    background-color: rgba(89, 145, 89, 0.685);
+    background-color: rgba(133, 221, 133, 0.753);
     padding-top: 0;
     margin-top: 0;
 }
@@ -75,7 +81,7 @@ bo.navbar {
 }
 
 .table-hover {
-    background-color: rgba(145, 224, 157, 0.568);
+    background-color: #753c1d1e;
 }
 
 .openActivity img {
