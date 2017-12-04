@@ -1,6 +1,6 @@
 var gardenApp = angular.module("gardenApp", ["ngRoute"]);
 
-gardenApp.config(function ($routeProvider) {
+gardenApp.config(function($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "app/home/home.html",
@@ -17,31 +17,31 @@ gardenApp.config(function ($routeProvider) {
         .when("/Watering", {
             templateUrl: "app/activities/Watering.html",
             controller: "alertCtrl"
-            
+
         })
         .when("/Fertilization", {
             templateUrl: "app/activities/Fertilization.html",
             controller: "alertCtrl"
-            
+
         })
         .when("/Trimming", {
             templateUrl: "app/activities/Trimming.html",
             controller: "alertCtrl"
-            
+
         })
         .when("/Fruit", {
             templateUrl: "app/activities/Fruit.html",
             controller: "alertCtrl"
-            
+
         })
         .when("/Planting", {
             templateUrl: "app/activities/Planting.html",
             controller: "alertCtrl"
-            
+
         })
         .when("/Settings", {
             templateUrl: "app/activities/Settings.html",
-            controller: "settingsCtrl"            
+            controller: "settingsCtrl"
         })
         .when("/Calendar", {
             templateUrl: "app/activities/Calendar.html",
@@ -49,13 +49,13 @@ gardenApp.config(function ($routeProvider) {
         .when("/Weather", {
             templateUrl: "app/activities/Weather.html",
             controller: "WeatherCtrl"
-            
+
         })
         .when("/tasks", {
             templateUrl: "app/activities/tasks.html",
             controller: "tasksCtrl"
         })
-         .when("/about", {
+        .when("/about", {
             templateUrl: "app/about/about.html",
         })
         .when("/reports", {
@@ -65,22 +65,28 @@ gardenApp.config(function ($routeProvider) {
         .when("/newTask", {
             templateUrl: "app/newTask/newTask.html",
             controller: "newTaskCtrl",
-            kindOfTask:"newtask"
+            kindOfTask: "newtask"
         })
-     .when("/taskdetails/:index", {
+        .when("/taskdetails/:index", {
             templateUrl: "app/newTask/newTask.html",
             controller: "newTaskCtrl",
-            kindOfTask:"reports"
+            kindOfTask: "reports"
         })
-         .when("/taskemployee/:index", {
+        .when("/taskemployee/:index", {
             templateUrl: "app/newTask/newTask.html",
             controller: "newTaskCtrl",
-            kindOfTask:"employee"
+            kindOfTask: "employee"
         })
         .when("/alert", {
             templateUrl: "app/alert/alert.html",
             controller: "alertCtrl"
         })
+        .when("/contact", {
+            templateUrl: "app/activities/contact.html",
+        })
+        .when("/links", {
+            templateUrl: "app/activities/links.html",
+        })
 
 
-    })    
+})
