@@ -1,6 +1,7 @@
 gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, activeUser, tasks, $routeParams, $route, activeTask) {
 
     $scope.user = activeUser.get();
+
     if (!activeUser.isLoggedIn()) {
         $location.path("/");
         return;
@@ -12,37 +13,46 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
     $scope.taskArr = tasks.getAll();
     $scope.task = {};
 
-    if ($scope.kindOfTask === "reports") {
-        $scope.task = tasks.getTaskById($routeParams.index);
-    }
-    if ($scope.kindOfTask === "employee") {
-        $scope.task = tasks.getTaskById($routeParams.index);
-    }
-
-
     $http.get("app/model/data/json/activity.json").then(function mySuccess(response) {
         $scope.activityArr = response.data;
+        if ($scope.kindOfTask==="newtask") {
+            $scope.task.activity=$scope.activityArr[0];
+        }
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
 
     $http.get("app/model/data/json/location.json").then(function mySuccess(response) {
         $scope.locationArr = response.data;
-    }, function myError(response) {
+        if ($scope.kindOfTask==="newtask") {
+            $scope.task.location=$scope.locationArr[0];
+        }
+   }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
 
     $http.get("app/model/data/json/plants.json").then(function mySuccess(response) {
         $scope.plantsArr = response.data;
-    }, function myError(response) {
+        if ($scope.kindOfTask==="newtask") {
+            $scope.task.plant=$scope.plantsArr[0];
+        }
+   }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
 
     $http.get("app/model/data/json/users.json").then(function mySuccess(response) {
         $scope.employeeArr = response.data;
-    }, function myError(response) {
+        if ($scope.kindOfTask==="newtask") {
+            $scope.task.Employee=$scope.employeeArr[0];
+        }
+   }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
+
+    
+    if ($routeParams.index) {
+        $scope.task = tasks.getTaskById($routeParams.index);
+    }
 
     $scope.cancel = function () {
         $location.path("/newTask");

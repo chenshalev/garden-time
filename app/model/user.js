@@ -19,7 +19,9 @@ gardenApp.factory("activeUser", function(User){
     var isLoggedIn = function() {
         return user ? true : false;
     };
-
+    var userfirstName=function () {
+        loggedInUser.firstName;
+    }
     var login = function(loggedInUser) {
         user = loggedInUser;
     };
