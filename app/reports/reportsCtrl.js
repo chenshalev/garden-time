@@ -20,7 +20,8 @@ gardenApp.controller("reportsCtrl", function ($scope, $log, $http, $location, ac
         });
     }else {
        $scope.taskArr=tasks.getAll();
-        
+       //alert(JSON.stringify($scope.taskArr));
+       
     }
 
         $scope.openTask= function (task) {

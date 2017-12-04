@@ -37,7 +37,16 @@ gardenApp.factory("tasks", function (Task, activeUser) {
         taskEmp.push(task);
     }
     var update = function (index, task) {
-        taskArr[index] = task;       
+        taskArr[index] = task;    
+        //alert(index)  ;              
+        //alert("update"+JSON.stringify(taskArr))  ;              
+    }
+    var addDateDone=function(task) {
+        var index=taskArr.indexOf(task);
+        //alert("index"+index);
+        //alert("task"+JSON.stringify(task));
+        //alert("taskArr"+JSON.stringify(taskArr));
+        taskArr[index].datedone = new Date();
     }
     var updateEmp = function (index, task) {
         taskEmp[index] = task;
@@ -63,6 +72,7 @@ gardenApp.factory("tasks", function (Task, activeUser) {
         wasEverLoaded = true;
     }
     var getAll = function () {
+        //alert(JSON.stringify(taskArr))  ;       
         return taskArr;
     }
     var getAllEmp = function () {
@@ -104,6 +114,7 @@ gardenApp.factory("tasks", function (Task, activeUser) {
         add: add,
         addEmp:addEmp,
         update: update,
+        addDateDone:addDateDone,
         updateEmp: updateEmp,
         updateAllEmp:updateAllEmp,    
         updateAll:updateAll,    

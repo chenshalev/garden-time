@@ -57,14 +57,14 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
 
         var indexEmp=tasks.getIndexByTaskEmp(task);
 
-        var index=tasks.getIndexByTask(task);
+        //var index=tasks.getIndexByTask(task);
 
+        //tasks.addDateDone($scope.task);
+        
         $scope.task.datedone = new Date();
 
         tasks.updateEmp(indexEmp,task);
 
-        tasks.update(index,task);
-    
         $location.path("/employeeMain");
     }
 

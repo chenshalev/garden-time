@@ -28,7 +28,6 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
         });
     } else {
         $scope.taskEmp = tasks.getAllEmp();
-        alert(JSON.stringify($scope.taskEmp));
     }
 
 
