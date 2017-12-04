@@ -41,6 +41,7 @@ gardenApp.config(function ($routeProvider) {
         })
         .when("/Settings", {
             templateUrl: "app/activities/Settings.html",
+            controller: "settingsCtrl"            
         })
         .when("/Calendar", {
             templateUrl: "app/activities/Calendar.html",
