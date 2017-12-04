@@ -42,6 +42,14 @@ gardenApp.config(function ($routeProvider) {
         .when("/Settings", {
             templateUrl: "app/activities/Settings.html",
         })
+        .when("/Calendar", {
+            templateUrl: "app/activities/Calendar.html",
+        })
+        .when("/Weather", {
+            templateUrl: "app/activities/Weather.html",
+            controller: "WeatherCtrl"
+            
+        })
         .when("/tasks", {
             templateUrl: "app/activities/tasks.html",
             controller: "tasksCtrl"
@@ -74,4 +82,4 @@ gardenApp.config(function ($routeProvider) {
         })
 
 
-})
+    })    

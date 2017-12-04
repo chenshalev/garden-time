@@ -55,24 +55,27 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
 
     $scope.Done = function (task) {
 
+  
         var indexEmp=tasks.getIndexByTaskEmp(task);
-
-        //var index=tasks.getIndexByTask(task);
-
-        //tasks.addDateDone($scope.task);
-        
-        $scope.task.datedone = new Date();
-
         tasks.updateEmp(indexEmp,task);
 
+
+        var taskArr = tasks.getAll();
+        //alert(JSON.stringify(taskArr));
+        var index=tasks.getIndexByTask($scope.task);
+        alert("index"+index);
+        $scope.task.datedone = "2019-01-01";        
+        tasks.update(index,$scope.task);
+        
         $location.path("/employeeMain");
     }
 
     $scope.create = function (task) {
+        $scope.task.Employee = $scope.task.Employee.firstName;
         tasks.add($scope.task);
         tasks.addEmp($scope.task);
         $scope.task = {};
-        $location.path("/newTask");
+        $location.path("/managerMain");
     }
 
 
