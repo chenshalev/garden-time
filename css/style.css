@@ -107,21 +107,18 @@
                                         color: white;
                                         background-color: rgb(67, 128, 67);
                                         width: 100%;
+                                        font-size:20px;
                                     }
                                     
-                                    .pull-right>a {
+                                    a {
                                         text-decoration: none;
                                         color: white;
                                     }
-                                    /*
+  
                                     .contact {
-                                        padding-right: 30px;
+                                        padding-left:30px;
                                     }
-                                    */
-                                    #logo {
-                                        width: 150;
-                                        height: 150;
-                                    }
+                                
                                     
                                     .celsius:before {
                                         content: ' \00B0';
