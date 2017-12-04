@@ -81,6 +81,5 @@ gardenApp.config(function ($routeProvider) {
             templateUrl: "app/alert/alert.html",
             controller: "alertCtrl"
         })
-
-
+ 
     })    

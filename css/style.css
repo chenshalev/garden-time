@@ -24,7 +24,6 @@ bo.navbar {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: green;
     color: white;
 }
 
@@ -86,11 +85,6 @@ bo.navbar {
 .newtask {
     font-size: 13px;
 }
-
-.newtask>.jumbotron {
-    padding: 0;
-}
-
 .jumbotron {
     padding: 0;
 }
@@ -102,7 +96,10 @@ bo.navbar {
     background-color: rgb(67, 128, 67);
     width: 100%;
 }
-
+.pull-right > a {
+    text-decoration: none;
+    color: white;
+}   
 #logo {
     width: 150;
     height: 150;
