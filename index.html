@@ -32,11 +32,11 @@
     <script src="app/reports/reportsCtrl.js"></script>
     <script src="app/alert/alertCtrl.js"></script>
     <script src="app/activities/WeatherCtrl.js"></script>
-    
+
     <script src="app/model/user.js"></script>
     <script src="app/model/tasks.js"></script>
     <script src="app/model/activeTask.js"></script>
-    
+
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -100,11 +100,12 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li ng-hide="isLoggedIn()">
+                <!-- <li ng-hide="isLoggedIn()">
                     <a href="#">Login</a>
                 </li>
+            -->
                 <li ng-show="isLoggedIn()">
-                    <a href="#">Logout</a>
+                    <a href="#">Logout {{user}}</a>
                 </li>
             </ul>
         </div>
