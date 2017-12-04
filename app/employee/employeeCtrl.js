@@ -1,4 +1,4 @@
-gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, activeUser, tasks, $route, Task) {
+gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, activeUser, tasks, $route, Task,activeTask) {
 
 
 
@@ -12,31 +12,31 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
     var wasEverLoadedEmp = tasks.getwasEverLoadedEmp();
     if (!wasEverLoadedEmp) {
         $http.get("app/model/data/json/tasks.json").then(function mySuccess(response) {
-            // Updating the service with the data
             tasks.loadEmp(response.data);
-            // Getting the data from the service
-
-            taskEmp = tasks.getAllEmp();
-            var taskxx=taskEmp;
-            for (var i=0;i<taskxx.length;i++){
-                if (taskxx[i].Employee!=$scope.user.firstName) {
-                    index=taskEmp.indexOf(taskxx[i]);
-                     tasks.removeEmp(index);
+            var taskEmp = tasks.getAllEmp();
+            var taskxx=[];
+            for (var i=0;i<taskEmp.length;i++){
+                if (taskEmp[i].Employee===$scope.user.firstName) {
+                     taskxx.push(taskEmp[i]);
                 }
             }
-            $scope.taskEmp = taskEmp;
+            $scope.taskEmp = taskxx;
+            tasks.updateAllEmp($scope.taskEmp);
             
         }, function myError(response) {
             alert("error" + JSON.stringify(response.status));
         });
     } else {
         $scope.taskEmp = tasks.getAllEmp();
+        alert(JSON.stringify($scope.taskEmp));
     }
 
 
     $scope.openTask = function (task) {
         var taskIndex = $scope.taskEmp.indexOf(task);
-        // Updating the URL
+
+        activeTask.add(task);
+        
         $location.path("/taskemployee/" + taskIndex)
     }
 

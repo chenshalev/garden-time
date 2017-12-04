@@ -33,14 +33,21 @@ gardenApp.factory("tasks", function (Task, activeUser) {
     var add = function (task) {
         taskArr.push(task);
     }
-
+    var addEmp = function (task) {
+        taskEmp.push(task);
+    }
     var update = function (index, task) {
-        taskArr[index] = task;
+        taskArr[index] = task;       
     }
     var updateEmp = function (index, task) {
         taskEmp[index] = task;
     }
-
+    function getIndexByTaskEmp(task) {
+        return taskEmp.indexOf(task);
+    }
+    function getIndexByTask(task) {
+        return taskArr.indexOf(task);
+    }
     var remove = function (index) {
         taskArr.splice(index, 1);
     }
@@ -55,24 +62,19 @@ gardenApp.factory("tasks", function (Task, activeUser) {
         }
         wasEverLoaded = true;
     }
-
-    var loadEmp = function (taskPlainObjectArr) {
-        for (var i = 0; i < taskPlainObjectArr.length; i++) {
-            // if (taskPlainObjectArr[i].Employee != user.firstName) {
-
-            //  } else {
-            taskEmp.push(new Task(taskPlainObjectArr[i]));
-        }
-        wasEverLoadedEmp = true;
-    }
     var getAll = function () {
         return taskArr;
     }
     var getAllEmp = function () {
         return taskEmp;
     }
-
-    var get = function (index) {
+    var updateAllEmp = function (tempArr) {
+        taskEmp= tempArr;
+    }
+    var updateAll = function (tempArr) {
+        taskArr= tempArr;
+    }
+   var get = function (index) {
         return taskArr[index];
     }
 
@@ -91,15 +93,24 @@ gardenApp.factory("tasks", function (Task, activeUser) {
     function getwasEverLoadedEmp() {
         return wasEverLoadedEmp;
     }
+    var loadEmp = function (taskPlainObjectArr) {
+        for (var i = 0; i < taskPlainObjectArr.length; i++) {
+             taskEmp.push(new Task(taskPlainObjectArr[i]));
+        }
+        wasEverLoadedEmp = true;
+    }
 
     return {
         add: add,
+        addEmp:addEmp,
         update: update,
         updateEmp: updateEmp,
+        updateAllEmp:updateAllEmp,    
+        updateAll:updateAll,    
         remove: remove,
         removeEmp: removeEmp,
         load: load,
-        loadEmp: loadEmp,
+        loadEmp:loadEmp,
         getAll: getAll,
         getAllEmp: getAllEmp,
         get: get,
@@ -107,6 +118,8 @@ gardenApp.factory("tasks", function (Task, activeUser) {
         getTaskById: getTaskById,
         getTaskEmpById: getTaskEmpById,
         getwasEverLoaded: getwasEverLoaded,
-        getwasEverLoadedEmp: getwasEverLoadedEmp
+        getwasEverLoadedEmp: getwasEverLoadedEmp,
+        getIndexByTask:getIndexByTask,
+        getIndexByTaskEmp:getIndexByTaskEmp
     }
 })

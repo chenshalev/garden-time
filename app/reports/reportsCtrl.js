@@ -13,11 +13,14 @@ gardenApp.controller("reportsCtrl", function ($scope, $log, $http, $location, ac
             // Getting the data from the service
             taskArr=tasks.getAll();
             $scope.taskArr=taskArr;
+            tasks.updateAll($scope.taskArr);
+            
         }, function myError(response) {
             alert("error" + JSON.stringify(response.status));
         });
     }else {
-        $scope.taskArr=taskArr;
+       $scope.taskArr=tasks.getAll();
+        
     }
 
         $scope.openTask= function (task) {
