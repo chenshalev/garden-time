@@ -10,14 +10,13 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
     $scope.kindOfTask = $route.current.$$route.kindOfTask;
 
     $scope.taskArr = tasks.getAll();
-    //$scope.taskEmp=tasks.getAllEmp();
     $scope.task = {};
 
     if ($scope.kindOfTask === "reports") {
         $scope.task = tasks.getTaskById($routeParams.index);
     }
     if ($scope.kindOfTask === "employee") {
-        $scope.task = activeTask.get();
+        $scope.task = tasks.getTaskById($routeParams.index);
     }
 
 
@@ -45,35 +44,20 @@ gardenApp.controller("newTaskCtrl", function ($scope, $log, $http, $location, ac
         alert("error" + JSON.stringify(response.status));
     });
 
-    //Default for new task 
-
-
-
     $scope.cancel = function () {
         $location.path("/newTask");
     }
 
     $scope.Done = function (task) {
-
-  
-        var indexEmp=tasks.getIndexByTaskEmp(task);
-        tasks.updateEmp(indexEmp,task);
-
-
-        var taskArr = tasks.getAll();
-        //alert(JSON.stringify(taskArr));
-        var index=tasks.getIndexByTask($scope.task);
-        alert("index"+index);
-        $scope.task.datedone = "2019-01-01";        
-        tasks.update(index,$scope.task);
-        
+       var index=tasks.getIndexByTask(task);
+        task.datedone=new Date();
+        tasks.update(index,task);     
         $location.path("/employeeMain");
     }
 
     $scope.create = function (task) {
         $scope.task.Employee = $scope.task.Employee.firstName;
         tasks.add($scope.task);
-        tasks.addEmp($scope.task);
         $scope.task = {};
         $location.path("/managerMain");
     }

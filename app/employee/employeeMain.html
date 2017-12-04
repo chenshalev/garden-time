@@ -17,7 +17,7 @@
             </thead>
 
             <tbody>
-                <tr class="pointer" ng-repeat="task in taskEmp" ng-click="openTask(task)">
+                <tr class="pointer" ng-repeat="task in taskArr | filter : filterbyEmployee" ng-click="openTask(task)">
                     <td>{{task.name}}</td>
                     <td>{{task.fromdate|date}}</td>
                     <td>{{task.activity}}</td>

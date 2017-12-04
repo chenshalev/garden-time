@@ -1,6 +1,4 @@
-gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, activeUser, tasks, $route, Task,activeTask) {
-
-
+gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, activeUser, tasks, $route, Task, activeTask) {
 
 
     if (!activeUser.isLoggedIn()) {
@@ -9,35 +7,44 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
     }
     $scope.user = activeUser.get();
 
-    var wasEverLoadedEmp = tasks.getwasEverLoadedEmp();
-    if (!wasEverLoadedEmp) {
+    var wasEverLoaded = tasks.getwasEverLoaded();
+    if (!wasEverLoaded) {
         $http.get("app/model/data/json/tasks.json").then(function mySuccess(response) {
-            tasks.loadEmp(response.data);
-            var taskEmp = tasks.getAllEmp();
-            var taskxx=[];
-            for (var i=0;i<taskEmp.length;i++){
-                if (taskEmp[i].Employee===$scope.user.firstName) {
-                     taskxx.push(taskEmp[i]);
-                }
-            }
-            $scope.taskEmp = taskxx;
-            tasks.updateAllEmp($scope.taskEmp);
-            
+            // Updating the service with the data
+            tasks.load(response.data);
+            // Getting the data from the service
+            taskArr = tasks.getAll();
+            $scope.taskArr = taskArr;
+            tasks.updateAll($scope.taskArr);
+
         }, function myError(response) {
             alert("error" + JSON.stringify(response.status));
         });
     } else {
-        $scope.taskEmp = tasks.getAllEmp();
+        $scope.taskArr = tasks.getAll();
+        //alert(JSON.stringify($scope.taskArr));
+
+    }
+    // Custom filter function
+    $scope.filterbyEmployee = function (task) {
+        //alert(task.Employee);
+        //alert($scope.user.firstName);
+        if (task.Employee === $scope.user.firstName) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
-    $scope.openTask = function (task) {
-        var taskIndex = $scope.taskEmp.indexOf(task);
 
-        activeTask.add(task);
-        
+     $scope.openTask = function (task) {
+        var taskIndex = $scope.taskArr.indexOf(task);
+
+        // Updating the URL
         $location.path("/taskemployee/" + taskIndex)
     }
+
 
 
 });
