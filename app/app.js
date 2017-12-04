@@ -58,7 +58,7 @@ gardenApp.config(function ($routeProvider) {
             controller: "newTaskCtrl",
             kindOfTask:"employee"
         })
- .when("/alert", {
+        .when("/alert", {
             templateUrl: "app/alert/alert.html",
             controller: "alertCtrl"
         })
