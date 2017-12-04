@@ -1,115 +1,128 @@
-body {
-    background-color: #91db8d56;
-}
-
-bo.navbar {
-    margin-bottom: 0;
-}
-
-.navbar-default .navbar-brand:hover {
-    font-family: "Pacifico";
-    color: white;
-}
-
-.navbar-default .navbar-brand {
-    font-family: "Pacifico";
-    color: rgba(30, 247, 61, 0.40);
-    background-color: rgba(164, 243, 164, 0.281);
-}
-
-#navgarden {
-    margin: 0;
-    color: white;
-    background-color: rgb(67, 128, 67);
-    width: 100%;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: white;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-    color: rgb(12, 247, 12);
-    font-size: 150%;
-}
-
-.container .jumbotron {
-    font-family: 'Amaranth', sans-serif;
-    font-size: 4em;
-    background-color: #a8d1f3b4;
-    color: rgba(5, 61, 19, 0.884);
-}
-
-.container {
-    font-family: 'Amaranth', sans-serif;
-    font-size: 1.5em;
-}
-
-.navbar {
-    font-family: 'Amaranth', sans-serif;
-    font-size: 1em;
-    margin-top: 0;
-}
-
-.homejumbo {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-}
-
-.openActivity {
-    cursor: pointer;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-.login {
-    background-color: rgba(133, 221, 133, 0.753);
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.employeetask {
-    background-color: rgba(154, 248, 56, 0.55);
-}
-.form-group {
-    border-radius: 30px;
-}
-.table {
-    border-radius: 30px;
-}
-.table-hover {
-    background-color: #753c1d1e;
-}
-
-.openActivity img {
-    width: 100%;
-}
-
-.newtask {
-    font-size: 13px;
-}
-.jumbotron {
-    padding: 0;
-}
-
-.footer-bottom {
-    position: fixed;
-    bottom: 0;
-    color: white;
-    background-color: rgb(67, 128, 67);
-    width: 100%;
-}
-.pull-right > a {
-    text-decoration: none;
-    color: white;
-}   
-.contact {
-    padding-right:30px;
-}
-#logo {
-    width: 150;
-    height: 150;
-}
+                                    body {
+                                        background-color: #91db8d56;
+                                    }
+                                    
+                                    bo.navbar {
+                                        margin-bottom: 0;
+                                    }
+                                    
+                                    .navbar-default .navbar-brand:hover {
+                                        font-family: "Pacifico";
+                                        color: white;
+                                    }
+                                    
+                                    .navbar-default .navbar-brand {
+                                        font-family: "Pacifico";
+                                        color: rgba(30, 247, 61, 0.40);
+                                        background-color: rgba(164, 243, 164, 0.281);
+                                    }
+                                    
+                                    #navgarden {
+                                        margin: 0;
+                                        color: white;
+                                        background-color: rgb(67, 128, 67);
+                                        width: 100%;
+                                    }
+                                    
+                                    .navbar-default .navbar-nav>li>a {
+                                        color: white;
+                                    }
+                                    
+                                    .navbar-default .navbar-nav>li>a:hover {
+                                        color: rgb(12, 247, 12);
+                                        font-size: 150%;
+                                    }
+                                    
+                                    .container .jumbotron {
+                                        font-family: 'Amaranth', sans-serif;
+                                        font-size: 4em;
+                                        background-color: #a8d1f3b4;
+                                        color: rgba(5, 61, 19, 0.884);
+                                    }
+                                    
+                                    .container {
+                                        font-family: 'Amaranth', sans-serif;
+                                        font-size: 1.5em;
+                                    }
+                                    
+                                    .navbar {
+                                        font-family: 'Amaranth', sans-serif;
+                                        font-size: 1em;
+                                        margin-top: 0;
+                                    }
+                                    
+                                    .homejumbo {
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                        padding-top: 0;
+                                    }
+                                    
+                                    .openActivity {
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .pointer {
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .login {
+                                        background-color: rgba(133, 221, 133, 0.753);
+                                        padding-top: 0;
+                                        margin-top: 0;
+                                        border: 4px solid rgb(67, 128, 67);
+                                        border-radius: 20px;
+                                    }
+                                    
+                                    .employeetask {
+                                        background-color: rgba(154, 248, 56, 0.55);
+                                    }
+                                    
+                                    .form-group {
+                                        border-radius: 20px;
+                                    }
+                                    
+                                    .table {
+                                        border-radius: 20px;
+                                    }
+                                    
+                                    .table-hover {
+                                        background-color: #753c1d1e;
+                                    }
+                                    
+                                    .openActivity img {
+                                        width: 100%;
+                                    }
+                                    
+                                    .newtask {
+                                        font-size: 13px;
+                                    }
+                                    
+                                    .jumbotron {
+                                        padding: 0;
+                                    }
+                                    
+                                    .footer-bottom {
+                                        position: fixed;
+                                        bottom: 0;
+                                        color: white;
+                                        background-color: rgb(67, 128, 67);
+                                        width: 100%;
+                                    }
+                                    
+                                    .pull-right>a {
+                                        text-decoration: none;
+                                        color: white;
+                                    }
+                                    
+                                    .contact {
+                                        padding-right: 30px;
+                                    }
+                                    
+                                    #logo {
+                                        width: 150;
+                                        height: 150;
+                                    }
+                                    
+                                    .celsius:before {
+                                        content: ' \00B0';
+                                    }
