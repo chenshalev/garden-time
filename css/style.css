@@ -106,6 +106,9 @@ bo.navbar {
     text-decoration: none;
     color: white;
 }   
+.contact {
+    padding-right:30px;
+}
 #logo {
     width: 150;
     height: 150;
