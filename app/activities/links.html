@@ -1,12 +1,25 @@
 <div class="container">
-        
-            <div class="jumbotron center-text">
-                <h1>Links</h1>
-                <h2>Hello {{user.firstName}} {{user.lastName}} </h2>
-            </div>
-            <div>
-                <a href="http://www.yagurgan.co.il/HTMLs/Home.aspx" target = "_blank" >YAGUR </a>
-                <a href="" target=""></a>
-            </div>
-        
-        </div>
+
+    <div class="jumbotron center-text">
+        <h1>Useful Links</h1>
+        <h2>Hello {{user.firstName}} {{user.lastName}} </h2>
+    </div>
+    <div>
+        <a href="http://www.yagurgan.co.il/HTMLs/Home.aspx" target="_blank"><img ng-src="http://www.yagurgan.co.il/Media/Uploads/logopng.png" class="img-responsive" alt="YAGUR Gardening"> </a>
+        <a href="" target=""></a>
+
+    </div>
+    <br>
+    <br>
+    <div>
+        <a href="http://www.hagarin.co.il/" target="_blank"><img ng-src="http://www.hagarin.co.il/App_Themes/hagarin_he-IL/M/new_logo.png" class="img-responsive" alt="HAGARIN Agriculture Supply Store"> </a>
+        <a href="" target=""></a>
+    </div>
+    <br>
+    <br>
+    <div>
+        <a href="https://www.accuweather.com/he/il/israel-weather" target="_blank"><img ng-src="data:image/png;base64,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"
+                class="img-responsive" alt="AccuWeather Forcast"> </a>
+        <a href="" target=""></a>
+    </div>
+</div>
