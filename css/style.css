@@ -25,8 +25,6 @@ bo.navbar {
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: green;
-    background-color: rgb(67, 128, 67);
     color: white;
 }
 
@@ -76,7 +74,12 @@ bo.navbar {
 .employeetask {
     background-color: rgba(154, 248, 56, 0.55);
 }
-
+.form-group {
+    border-radius: 30px;
+}
+.table {
+    border-radius: 30px;
+}
 .table-hover {
     background-color: #753c1d1e;
 }
@@ -88,11 +91,6 @@ bo.navbar {
 .newtask {
     font-size: 13px;
 }
-
-.newtask>.jumbotron {
-    padding: 0;
-}
-
 .jumbotron {
     padding: 0;
 }
@@ -104,7 +102,10 @@ bo.navbar {
     background-color: rgb(67, 128, 67);
     width: 100%;
 }
-
+.pull-right > a {
+    text-decoration: none;
+    color: white;
+}   
 #logo {
     width: 150;
     height: 150;

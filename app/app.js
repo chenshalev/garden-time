@@ -81,6 +81,7 @@ gardenApp.config(function($routeProvider) {
             templateUrl: "app/alert/alert.html",
             controller: "alertCtrl"
         })
+<<<<<<< HEAD
         .when("/contact", {
             templateUrl: "app/activities/contact.html",
         })
@@ -90,3 +91,7 @@ gardenApp.config(function($routeProvider) {
 
 
 })
+=======
+ 
+    })    
+>>>>>>> 117a64b0a83e04d9d10b556e2c1048e2f48c4658
