@@ -1,12 +1,10 @@
-gardenApp.controller("settingsCtrl", function($scope, $log, $http, $location, activeUser, tasks, $routeParams, $route, activeTask) {
+gardenApp.controller("settingsCtrl", function ($scope, $log, $http, $location, activeUser, tasks, $routeParams, $route, activeTask) {
 
     $scope.user = activeUser.get();
     if (!activeUser.isLoggedIn()) {
         $location.path("/");
         return;
     }
-
-
 
     $scope.taskArr = tasks.getAll();
     $scope.task = {};
@@ -39,4 +37,5 @@ gardenApp.controller("settingsCtrl", function($scope, $log, $http, $location, ac
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
+
 })
