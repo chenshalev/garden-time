@@ -33,6 +33,11 @@
                                         font-size: 150%;
                                     }
                                     
+                                    .footer-bottom>a:hover {
+                                        color: rgb(12, 247, 12);
+                                        font-size: 150%;
+                                    }
+                                    
                                     .container .jumbotron {
                                         font-family: 'Amaranth', sans-serif;
                                         font-size: 4em;
@@ -67,13 +72,13 @@
                                     
                                     .login {
                                         background-color: rgba(133, 221, 133, 0.753);
-                                        margin-top:40px;
+                                        margin-top: 40px;
                                         border: 4px solid rgb(67, 128, 67);
                                         border-radius: 20px;
                                     }
+                                    
                                     .carosselandlogin {
-                                        margin-bottom:4em;
-                                        
+                                        margin-bottom: 4em;
                                     }
                                     
                                     .employeetask {
@@ -110,32 +115,31 @@
                                         color: white;
                                         background-color: rgb(67, 128, 67);
                                         width: 100%;
-                                        font-size:15px;
+                                        font-size: 1em;
+                                        font-family: 'Amaranth', sans-serif;
                                     }
                                     
                                     a {
                                         text-decoration: none;
                                         color: white;
                                     }
-  
-                                    .contact {
-                                        padding-left:30px;
+                                    
+                                    .pull-right {
+                                        padding-left: 100px;
                                     }
-                                
                                     
                                     .celsius:before {
                                         content: ' \00B0';
                                     }
-
-                                    .carousel-inner > .item > img,
-                                    .carousel-inner > .item > a > img {
+                                    
+                                    .carousel-inner>.item>img,
+                                    .carousel-inner>.item>a>img {
                                         width: 50%;
                                         height: 100%;
                                         margin: auto;
                                     }
+                                    
                                     #myCarousel {
                                         border: 4px solid rgb(67, 128, 67);
                                         border-radius: 20px;
                                     }
-                                  
-                        
