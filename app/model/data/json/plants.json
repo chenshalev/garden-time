@@ -84,5 +84,84 @@
         "PlantingSowing": "",
         "Trimming": "03",
         "Watering": "20 liters X 2 a week"
+    },
+    {
+        "name": "Roses",
+        "image": "https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Outdoor/Garden_Center/Garden_Plants_and_Flowers/Roses/floribunda-roses.jpg",
+        "link": "https://garden.org/plants/view/73/Rose-Rosa-Mister-Lincoln/",
+        "location": "Front Garden",
+        "Kind": "Bush",
+        "FruitingTimeBegins": "05",
+        "FruitingTimeEnds": "07",
+        "FertilizationMaterial": "20:20:20",
+        "FertilizationTimeBegin": "10",
+        "FertilizationTimeEnds": "11",
+        "PlantingSowing": "",
+        "Trimming": "03",
+        "Watering": "10 liters X 2 a week"
+    },
+
+    {
+        "name": "Lettuce",
+        "image": "https://i.pinimg.com/736x/7e/50/a2/7e50a2e23021f5824aa2f1e9bc3521f4--balcony-gardening-products.jpg",
+        "link": "https://garden.org/plants/view/133637/Lettuce-Lactuca-sativa-Red-Velvet/",
+        "location": "Backyard",
+        "Kind": "Vegtebales",
+        "FruitingTimeBegins": "05",
+        "FruitingTimeEnds": "07",
+        "FertilizationMaterial": "Humus",
+        "FertilizationTimeBegin": "10",
+        "FertilizationTimeEnds": "11",
+        "PlantingSowing": "",
+        "Trimming": "03",
+        "Watering": "5 liters X 2 a week"
+    },
+
+    {
+        "name": "Daisy Flowers",
+        "image": "http://cdn.shopify.com/s/files/1/1537/5553/products/03808_grande.jpg?v=1486443241",
+        "link": "https://garden.org/plants/view/75521/English-Daisy-Bellis-perennis/",
+        "location": "Front Garden",
+        "Kind": "Flowers",
+        "FruitingTimeBegins": "05",
+        "FruitingTimeEnds": "07",
+        "FertilizationMaterial": "20:20:20",
+        "FertilizationTimeBegin": "10",
+        "FertilizationTimeEnds": "11",
+        "PlantingSowing": "04",
+        "Trimming": "03",
+        "Watering": "3 liters X 2 a week"
+    },
+    {
+        "name": "Pelargonium Pots",
+        "image": "https://i.pinimg.com/474x/b6/af/0c/b6af0c1f1bd90174de785ec7912168dd--garden-pots-cottage-garden.jpg",
+        "link": "https://garden.org/plants/view/541766/Geranium-Pelargonium-Calliope-Dark-Red/",
+        "location": "Front Garden",
+        "Kind": "Flowers",
+        "FruitingTimeBegins": "05",
+        "FruitingTimeEnds": "07",
+        "FertilizationMaterial": "20:20:20",
+        "FertilizationTimeBegin": "10",
+        "FertilizationTimeEnds": "11",
+        "PlantingSowing": "04",
+        "Trimming": "03",
+        "Watering": "3 liters X 2 a week"
+    },
+
+    {
+        "name": "Lawn",
+        "image": "http://www.deshebarama.co.il/images/products/elt-1-750x500.jpg",
+        "link": "http://www.deshebarama.co.il/products.html",
+        "location": "Front Garden",
+        "Kind": "Grass",
+        "FruitingTimeBegins": "",
+        "FruitingTimeEnds": "",
+        "FertilizationMaterial": "Compost",
+        "FertilizationTimeBegin": "10",
+        "FertilizationTimeEnds": "11",
+        "PlantingSowing": "03",
+        "Trimming": "Once a month",
+        "Watering": "20 liters X 2 a week"
     }
+
 ]
