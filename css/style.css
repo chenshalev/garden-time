@@ -33,11 +33,6 @@
                                         font-size: 150%;
                                     }
                                     
-                                    .footer-bottom>a:hover {
-                                        color: rgb(12, 247, 12);
-                                        font-size: 150%;
-                                    }
-                                    
                                     .container .jumbotron {
                                         font-family: 'Amaranth', sans-serif;
                                         font-size: 4em;
@@ -124,8 +119,8 @@
                                         color: white;
                                     }
                                     
-                                    .pull-right {
-                                        padding-left: 100px;
+                                    .contact {
+                                        padding-left: 30px;
                                     }
                                     
                                     .celsius:before {
