@@ -9,7 +9,7 @@
         "FertilizationMaterial": "20:20:20",
         "FertilizationTimeBegin": "10",
         "FertilizationTimeEnds": "11",
-        "PlantingSowing": "",
+        "PlantingSowing": "03",
         "Trimming": "03",
         "Watering": "20 liters X 2 a week"
     },
@@ -24,7 +24,7 @@
         "FertilizationMaterial": "20:20:20",
         "FertilizationTimeBegin": "10",
         "FertilizationTimeEnds": "11",
-        "PlantingSowing": "",
+        "PlantingSowing": "03",
         "Trimming": "03",
         "Watering": "20 liters X 2 a week"
     }, {
@@ -38,7 +38,7 @@
         "FertilizationMaterial": "20:20:20",
         "FertilizationTimeBegin": "10",
         "FertilizationTimeEnds": "11",
-        "PlantingSowing": "",
+        "PlantingSowing": "03",
         "Trimming": "03",
         "Watering": "20 liters X 2 a week"
     }, {
@@ -52,7 +52,7 @@
         "FertilizationMaterial": "20:20:20",
         "FertilizationTimeBegin": "10",
         "FertilizationTimeEnds": "11",
-        "PlantingSowing": "",
+        "PlantingSowing": "03",
         "Trimming": "03",
         "Watering": "20 liters X 2 a week"
     }, {
@@ -66,7 +66,7 @@
         "FertilizationMaterial": "20:20:20",
         "FertilizationTimeBegin": "10",
         "FertilizationTimeEnds": "11",
-        "PlantingSowing": "",
+        "PlantingSowing": "03",
         "Trimming": "03",
         "Watering": "20 liters X 2 a week"
     },
@@ -81,7 +81,7 @@
         "FertilizationMaterial": "20:20:20",
         "FertilizationTimeBegin": "10",
         "FertilizationTimeEnds": "11",
-        "PlantingSowing": "",
+        "PlantingSowing": "05",
         "Trimming": "03",
         "Watering": "20 liters X 2 a week"
     },
@@ -96,7 +96,7 @@
         "FertilizationMaterial": "20:20:20",
         "FertilizationTimeBegin": "10",
         "FertilizationTimeEnds": "11",
-        "PlantingSowing": "",
+        "PlantingSowing": "07",
         "Trimming": "03",
         "Watering": "10 liters X 2 a week"
     },
@@ -112,7 +112,7 @@
         "FertilizationMaterial": "Humus",
         "FertilizationTimeBegin": "10",
         "FertilizationTimeEnds": "11",
-        "PlantingSowing": "",
+        "PlantingSowing": "05",
         "Trimming": "03",
         "Watering": "5 liters X 2 a week"
     },
