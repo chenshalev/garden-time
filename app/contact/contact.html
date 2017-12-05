@@ -1,108 +1,68 @@
-<div class="container contact">
-        
-            <div class="jumbotron text-center">
-                <h1 ng-show="kindOfTask==='newtask'">Open New Task</h1>
-                <h1 ng-show="kindOfTask==='reports'">Task Report</h1>
-                <h1 ng-show="kindOfTask==='employee'">Task View and complete</h1>
+<div class="container">
+
+    <div class="jumbotron center-text">
+        <h1>Contact Us</h1>
+        <h3> We'll be pleased hearing from you!</h3>
+    </div>
+    <div class="container newtask">
+
+        <div class="row ">
+            <div class="well col-xs-12 col-sm-8 col-md-8 col-lg-8 ">
+                <form class="form-horizontal ">
+                    <div class="form-group ">
+                        <h4 class="text-center"> Chen Shalev +972-52-3424322 Chensha07@gmail.com</h4>
+                        <h4 class="text-center"> Orly Olivier-Sluszny +972-54-8001320 Orly.sluszny@gmail.com</h4>
+                        <br>
+                        <br>
+
+                        <label class="control-label col-sm-2 " for="name ">Name:</label>
+                        <div class="col-sm-10 ">
+                            <input type="text " class="form-control " id="name " placeholder="Enter you first & last name " ng-model="task.name ">
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="control-label col-sm-2 " for="desc ">Phone No.:</label>
+                        <div class="col-sm-10 ">
+                            <input type="text " class="form-control " id="desc " placeholder="Enter your Phone No. (optional) " ng-model="task.description ">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label col-sm-2 " for="desc ">E-mail:</label>
+                        <div class="col-sm-10 ">
+                            <input type="text " class="form-control " id="desc " placeholder="Enter your E-mail " ng-model="task.description ">
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <label class="control-label col-sm-2 " for="Remarks ">Any Remarks?</label>
+                        <div class="col-sm-10 ">
+                            <textarea class="form-control " rows="5 " id="Remarks " ng-model="task.remarks "></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label class="control-label col-sm-2 " for="image ">Need to add a file?<fieldset>
+                        </fieldset></label>
+                        <div class="col-sm-10 ">
+                            <input type="text " class="form-control " id="imageUrl " placeholder="Enter file here " ng-model="task.imageurl ">
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="col-sm-offset-2 col-sm-10 ">
+                            <div class="pull-right ">
+                                <button type="submit " class="btn btn-default " ng-click="cancel() ">Cancel</button>
+                                <button type="submit " class="btn btn-success " ng-click="create(task) ">Send</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="row">
-                <div class="well col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="name">Name:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="name" placeholder="Enter Task name" ng-model="task.name" ng-disabled="kindOfTask!='newtask'">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="desc">Description:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="desc" placeholder="Enter Task description" ng-model="task.description" ng-disabled="kindOfTask!='newtask'">
-                            </div>
-                        </div>
-                        <div class="form-group" class="pull-left">
-                            <label class="control-label col-sm-2" for="activity">Activity:</label>
-                            <div class="col-sm-10">
-                                <select ng-model="task.activity" ng-options="y.activity for (x, y) in activityArr" ng-disabled="kindOfTask!='newtask'">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="location">Location:</label>
-                            <div class="col-sm-10">
-                                <select ng-model="task.location" ng-options="y.name for (x, y) in locationArr" ng-disabled="kindOfTask!='newtask'">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="plants">Plant:</label>
-                            <div class="col-sm-10">
-                                <select ng-model="task.plant" ng-options="y.name for (x, y) in plantsArr" ng-disabled="kindOfTask!='newtask'">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="employee">Responsibility:</label>
-                            <div class="col-sm-10">
-                                <select ng-model="task.Employee" ng-options="y.firstName for (x, y) in employeeArr" ng-disabled="kindOfTask!='newtask'">
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group" class="col-sm-10">
-                            <label> From:
-                                <input type="date" ng-model="task.fromdate" />
-                            </label>
-                            <label> To:
-                                <input type="date" ng-model="task.todate" />
-                            </label>
-                        </div>
-        
-                        <div class="form-group" class="col-sm-10">
-                            <label>Synchronized with Calendar:
-                                <input type="radio" ng-model="task.calendar" value="Yes" ng-disabled="kindOfTask!='newtask'">Yes
-                                <input type="radio" ng-model="task.calendar" value="no" ng-disabled="kindOfTask!='newtask'">No</label>
-                            <!--<div ng-switch="myVar">
-                                  <div ng-switch-when="no">
-                                  </div>
-                                  <div ng-switch-when="yes"> 
-                                  </div>
-                                </div>-->
-                        </div>
-        
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="Remarks">Remarks:</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" rows="5" id="Remarks" ng-model="task.remarks" ng-disabled="kindOfTask!='newtask'"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-sm-2" for="imageUrl">Image URL:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="imageUrl" placeholder="Enter image URL" ng-model="task.imageurl" ng-disabled="kindOfTask!='newtask'">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <div class="pull-right">
-                                    <button type="submit" class="btn btn-default" ng-click="cancel()" ng-hide="kindOfTask!='newtask'">Cancel</button>
-                                    <button type="submit" class="btn btn-success" ng-click="create(task)" ng-hide="kindOfTask!='newtask'">Create</button>
-                                </div>
-        
-        
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div ng-show="kindOfTask==='employee'" class="well col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                    <h2>
-                        If you completed the task please push the button Done
-                        <button type="submit" class="btn btn-success" ng-click="Done(task)" >
-                            Done</button>
-                    </h2>
-                </div>
-                <!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                <img ng-src="/images/logo-shira" class="img-responsive block-center" alt="Logo Image">
+
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+                <img ng-src="images/GardenTimeLogo.PNG " class="img-responsive" alt="Garden Time! ">
             </div>
-        
-        -->
-            </div>
+
+        </div>
+    </div>
