@@ -6,7 +6,7 @@
         <h1 ng-show="kindOfTask==='employee'">Task View and complete</h1>
     </div>
     <div class="row">
-        <div class="well col-xs-12 col-sm-8 col-md-12 col-lg-12">
+        <div class="well col-xs-12 col-sm-8 col-md-10 col-lg-10">
             <form class="form-horizontal" name="newtaskform">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="name">Name:</label>
@@ -96,12 +96,12 @@
                 </div>
             </form>
         </div>
-        <div ng-show="kindOfTask==='employee'" class="well col-xs-12 col-sm-3 col-md-3 col-lg-3">
-            <h2>
+        <div ng-show="kindOfTask==='employee'" class="well col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <h3>
                 If you completed the task please push the button Done
                 <button type="submit" class="btn btn-success" ng-click="Done(task)">
                     Done</button>
-            </h2>
+            </h3>
         </div>
         <!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <img ng-src="/images/logo-shira.png" class="img-responsive block-center" alt="Logo Image">
