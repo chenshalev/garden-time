@@ -10,4 +10,7 @@ gardenApp.controller("navCtrl", function($scope, activeUser) {
     $scope.getUserlastName = function() {
         return activeUser.get().lastName;
     };
+    $scope.logout= function () {
+        activeUser.logout();
+    }
 })
