@@ -4,4 +4,7 @@ gardenApp.controller("navCtrl", function($scope, activeUser) {
         return activeUser.isLoggedIn();
     };
     $scope.user = activeUser.get();
+    $scope.getUserName = function() {
+        return activeUser.get().firstName;
+    };
 })
