@@ -24,6 +24,9 @@
                                         color: rgba(30, 247, 61, 0.40);
                                         background-color: rgba(164, 243, 164, 0.281);
                                     }
+                                    .nav {
+                                        margin-top:40px;
+                                    }
                                     
                                     #navgarden {
                                         margin: 0;
