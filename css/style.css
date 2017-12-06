@@ -1,10 +1,17 @@
                                     body {
                                         background-color: #91db8d56;
-                                        color: rgba(5, 61, 19, 0.884);                                        
+                                        color: rgba(5, 61, 19, 0.884);
                                     }
                                     
                                     bo.navbar {
                                         margin-bottom: 0;
+                                    }
+                                    
+                                    .navbar-brand {
+                                        margin-top: 0px;
+                                        padding-top: 5px;
+                                        margin-left: 0px;
+                                        padding-left: 5px;
                                     }
                                     
                                     .navbar-default .navbar-brand:hover {
@@ -106,21 +113,20 @@
                                         padding: 0;
                                     }
                                     
+                                    a {
+                                        text-decoration: none;
+                                        color: #a8d1f3b4;
+                                        color: #ee5f0c;
+                                    }
+                                    
                                     .footer-bottom {
                                         position: fixed;
                                         bottom: 0;
                                         color: white;
                                         background-color: rgb(67, 128, 67);
                                         width: 100%;
-                                        font-size: 1em;
+                                        font-size: 1.5em;
                                         font-family: 'Amaranth', sans-serif;
-                                    }
-                                    
-                                    a {
-                                        text-decoration: none;
-                           
-                                        color: #a8d1f3b4;
-                                        
                                     }
                                     
                                     .contact {
