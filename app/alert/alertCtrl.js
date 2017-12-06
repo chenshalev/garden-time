@@ -20,8 +20,16 @@ gardenApp.controller("alertCtrl", function ($scope, $log, $http, $location, acti
         $scope.orderProp = prop;
     }
     $scope.reports = function () {
-        
-                $location.path("/reports")
-            }
+
+        $location.path("/reports")
+    }
+    $scope.reverse = false;
+    $scope.sortKey = 'name';
+
+    $scope.sort = function (keyname) {
+        $scope.sortKey = keyname;
+        $scope.reverse = !$scope.reverse;
+    }
+
 
 });

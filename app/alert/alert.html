@@ -24,19 +24,100 @@
         <table class="table table-hover">
             <thead class="table-hdr">
                 <tr class="pointer">
-                    <th ng-click="sortBy('name')">Plant Name</th>
-                    <th ng-click="sortBy('FruitingTimeBegins')">Fruiting Month Begins</th>
-                    <th ng-click="sortBy('FruitingTimeEnds')">Fruiting Month Ends</th>
-                    <th ng-click="sortBy('FertilizationMaterial')">Fertilization Material</th>
-                    <th ng-click="sortBy('FertilizationTimeBegin')">Fertilization Month Begins</th>
-                    <th ng-click="sortBy('FertilizationTimeEnds')">Fertilization Month Ends</th>
-                    <th ng-click="sortBy('PlantingSowing')">Planting & Sowing</th>
-                    <th ng-click="sortBy('Trimming')">Trimming</th>
-                    <th ng-click="sortBy('Watering')">Watering</th>
+                    <th ng-click="sort('name')">Plant Name
+                            <span ng-hide="(sortKey==='name' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='name' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+        
+                    </th>
+                    <th ng-click="sort('FruitingTimeBegins')">Fruiting Month Begins
+                            <span ng-hide="(sortKey==='FruitingTimeBegins' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='FruitingTimeBegins' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+        
+                    </th>
+                    <th ng-click="sort('FruitingTimeEnds')">Fruiting Month Ends
+                            <span ng-hide="(sortKey==='FruitingTimeEnds' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='FruitingTimeEnds' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+        
+                    </th>
+                    <th ng-click="sort('FertilizationMaterial')">Fertilization Material
+                            <span ng-hide="(sortKey==='FertilizationMaterial' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='FertilizationMaterial' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+        
+                    </th>
+                    <th ng-click="sort('FertilizationTimeBegin')">Fertilization Month Begins
+                            <span ng-hide="(sortKey==='FertilizationTimeBegin' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='FertilizationTimeBegin' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+        
+                    </th>
+                    <th ng-click="sort('FertilizationTimeEnds')">Fertilization Month Ends
+                            <span ng-hide="(sortKey==='FertilizationTimeEnds' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='FertilizationTimeEnds' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+        
+                    </th>
+                    <th ng-click="sort('PlantingSowing')">Planting & Sowing
+                            <span ng-hide="(sortKey==='PlantingSowing' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='PlantingSowing' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+        
+                    </th>
+                    <th ng-click="sort('Trimming')">Trimming
+                            <span ng-hide="(sortKey==='Trimming' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='Trimming' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+     
+                    </th>
+                    <th ng-click="sort('Watering')">Watering
+                            <span ng-hide="(sortKey==='Watering' && reverse==true)">
+                                    <i class="material-icons">arrow_drop_up</i>
+                                </span>
+        
+                                <span ng-hide="(sortKey=='Watering' && reverse==false)">
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </span>
+     
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="pointer" ng-repeat="plant in plantsArr | orderBy: orderProp : false">
+                <tr class="pointer" ng-repeat="plant in plantsArr | orderBy:sortKey:reverse">
                     <td>{{plant.name}}</td>
                     <td>{{plant.FruitingTimeBegins}}</td>
                     <td>{{plant.FruitingTimeEnds}}</td>

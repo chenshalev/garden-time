@@ -35,10 +35,17 @@ gardenApp.controller("employeeCtrl", function ($scope, $log, $http, $location, a
             return false;
         }
     }
+    $scope.reverse = false;
+    $scope.sortKey = 'name';
+
+    $scope.sort = function (keyname) {
+        $scope.sortKey = keyname;
+        $scope.reverse = !$scope.reverse;
+    }
 
 
 
-     $scope.openTask = function (task) {
+    $scope.openTask = function (task) {
         var taskIndex = $scope.taskArr.indexOf(task);
 
         // Updating the URL
