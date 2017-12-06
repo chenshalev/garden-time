@@ -2,7 +2,7 @@
                                         background-color: #91db8d56;
                                         color: rgba(5, 61, 19, 0.884);
                                     }
-                              
+                                    
                                     bo.navbar {
                                         margin-bottom: 0;
                                     }
@@ -33,7 +33,7 @@
                                     }
                                     
                                     .navbar-default .navbar-nav>li>a {
-                                        color: white;
+                                        color: rgb(246, 248, 109);
                                     }
                                     
                                     .navbar-default .navbar-nav>li>a:hover {
@@ -56,7 +56,7 @@
                                     
                                     .navbar {
                                         font-family: 'Amaranth', sans-serif;
-                                        font-size: 1em;
+                                        font-size: 1.5em;
                                         margin-top: 0;
                                     }
                                     
@@ -115,8 +115,11 @@
                                     
                                     a {
                                         text-decoration: none;
-                                        color: #a8d1f3b4;
-                                        color: #ee5f0c;
+                                        color: white;
+                                    }
+                                    
+                                    .contact-us {
+                                        color: #0c10ee;
                                     }
                                     
                                     .footer-bottom {
