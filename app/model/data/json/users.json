@@ -4,7 +4,7 @@
         "password": "123",
         "firstName": "Chen",
         "lastName": "Shalev",
-        "data": "app/model/data/json/chen.json",
+        "phone": "+972-52-3424322",        
         "role":"Employee"
     },
     {
@@ -12,7 +12,23 @@
         "password": "456",
         "firstName": "Orly",
         "lastName": "Sluszny",
-        "data": "app/model/data/json/orly.json",
+        "phone": "+972-54-8001320",        
+        "role":"Manager Assitant"
+    },
+    {
+        "email": "ariel.sluszny@gmail.com",
+        "password": "789",
+        "firstName": "Ariel",
+        "lastName": "Sluszny",
+        "phone": "+972-54-2212423",        
         "role":"Manager"
+    },
+    {
+        "email": "amir.dalia@gmail.com",
+        "password": "111",
+        "firstName": "Amir",
+        "lastName": "Dalia",
+        "phone": "+972-52-2832972",
+        "role":"Gardener"
     }
 ]

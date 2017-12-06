@@ -10,6 +10,7 @@ WEATHER חן-בוצע !
 אורלי -SETTINGS---done!
 חומרי דישון רעלים ו materials.JSON אורלי    done!
  לא הצלחתילהביא ב"מ במשימה חדשה בווקטורים
+ עציצים גן ירק וכו plant.JSON אורלי    done!
 
 
 ToDo:
@@ -22,7 +23,6 @@ REQUIRED - ?חן לשים בטסקס -צריך עדיין?
 FORM IN CONTACT US
 
 more pics?
- עציצים גן ירק וכו plant.JSON אורלי   
  TASKS WINDOWS אורלי לשים כפתורים כמו באלרטס
 להוריד הערות, קבצים מיותרים ומאמרים מוסגרים
 SettingsCtrl.js: how to conect each plant with its index link?
@@ -32,3 +32,4 @@ USER - חן מכניסה לתפריט
 עימוד כותרות שמאלה בפורמים
 temperature in celsius doesn't make sense
 FOOTER CONTACT to right
+sign up is needed?
