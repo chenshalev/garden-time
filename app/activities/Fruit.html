@@ -28,7 +28,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="pointer" ng-repeat="plant in plantsArr | orderBy: orderProp : true">
+                            <tr class="pointer" ng-repeat="plant in plantsArr | orderBy: orderProp : false">
                                 <td>{{plant.name}}</td>
                                 <td>{{plant.FruitingTimeBegins}}</td>
                                 <td>{{plant.FruitingTimeEnds}}</td>
