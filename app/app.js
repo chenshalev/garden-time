@@ -2,11 +2,15 @@ var gardenApp = angular.module("gardenApp", ["ngRoute"]);
 
 gardenApp.config(function($routeProvider) {
     $routeProvider
-        .when("/", {
-            templateUrl: "app/home/home.html",
-            controller: "homeCtrl"
-        })
-        .when("/managerMain", {
+    .when("/", {
+        templateUrl: "app/home/home.html",
+        controller: "homeCtrl"
+    })
+    .when("/login", {
+        templateUrl: "app/login/login.html",
+        controller: "homeCtrl"
+    })
+    .when("/managerMain", {
             templateUrl: "app/manager/managerMain.html",
             controller: "managerMainCtrl"
         })
