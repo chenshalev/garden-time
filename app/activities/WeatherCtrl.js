@@ -20,10 +20,12 @@ gardenApp.controller("WeatherCtrl", function ($scope, $log, $http, $location, ac
                 $scope.place = result.name;
                 $scope.image = result.weather[0].icon;
                 $scope.weather = result.weather[0].main;
+                $scope.humidity = result.main.humidity ;
                 $scope.temp = result.main.temp ;
-                $scope.temp=($scope.temp-32) * 5 / 9;
-                $scope.temp=Math.round($scope.temp);
-                alert(golink);
+                $scope.country=result.sys.country;
+                //$scope.temp=($scope.temp-32) * 5 / 9;
+                //$scope.temp=Math.round($scope.temp);
+                //alert(golink);
   
             });
         }
