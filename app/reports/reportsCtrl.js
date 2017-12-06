@@ -23,6 +23,18 @@ gardenApp.controller("reportsCtrl", function ($scope, $log, $http, $location, ac
        //alert(JSON.stringify($scope.taskArr));
        
     }
+    $scope.sortBy = function (prop) {
+        $scope.orderProp = prop;
+
+    }
+    $scope.reverse = false;
+    $scope.sortKey = 'name';
+
+    $scope.sort = function (keyname) {
+        $scope.sortKey = keyname;
+        $scope.reverse = !$scope.reverse;
+    }
+
 
         $scope.openTask= function (task) {
                 var taskIndex = $scope.taskArr.indexOf(task);

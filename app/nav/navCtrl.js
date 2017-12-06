@@ -5,10 +5,16 @@ gardenApp.controller("navCtrl", function($scope, activeUser) {
     };
     $scope.user = activeUser.get();
     $scope.getUserfirstName = function() {
-        return activeUser.get().firstName;
-    };
+        if (activeUser.get()){
+            return activeUser.get().firstName;           
+        }else return "";
+
+     };
     $scope.getUserlastName = function() {
-        return activeUser.get().lastName;
+        if (activeUser.get()) {
+            return activeUser.get().lastName;
+        }
+        else return "";
     };
     $scope.logout= function () {
         activeUser.logout();
