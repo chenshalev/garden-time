@@ -14,7 +14,6 @@ gardenApp.factory("Task", function() {
         this.calendar = plainObject.calendar;
         this.datedone = new Date(plainObject.datedone);
         this.material = plainObject.material;
-
     };
 
 

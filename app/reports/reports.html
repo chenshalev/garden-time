@@ -56,7 +56,7 @@
                 <tr class="pointer" ng-repeat="task in taskArr | orderBy: sortKey:reverse" ng-click="openTask(task)">
                     <td>{{task.name}}</td>
                     <td>{{task.fromdate|date}}</td>
-                    <td>{{task.datedone|date}}</td>
+                    <td>{{getDate(task)}}</td>
                     <td>{{task.Employee}}</td>
                 </tr>
             </tbody>

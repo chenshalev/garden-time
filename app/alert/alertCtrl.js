@@ -11,6 +11,27 @@ gardenApp.controller("alertCtrl", function ($scope, $log, $http, $location, acti
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
     });
+    $http.get("app/model/data/json/materials.json").then(function mySuccess(response) {
+        // Updating the service with the data
+        $scope.materialsArr= response.data;
+    }, function myError(response) {
+        alert("error" + JSON.stringify(response.status));
+    });
+    /*
+    "FertilizationMaterial": "Compost",
+    "name": "Composte",
+    "Kind": "Fertilization material",
+    "MaterialAmount": "60"
+    
+    for (var i=0;i<plantsArr.length;i++){
+        var material=plantsArr[i].FertilizationMaterial;
+        var amount=materials
+    }
+
+    */
+
+
+
 
     $scope.newTask = function () {
 
