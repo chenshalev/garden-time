@@ -24,9 +24,9 @@
                                         color: rgba(30, 247, 61, 0.40);
                                         background-color: rgba(164, 243, 164, 0.281);
                                     }
-                                    .nav {
+                                    /*.nav {
                                         margin-top:40px;
-                                    }
+                                    }*/
                                     
                                     #navgarden {
                                         margin: 0;
@@ -78,11 +78,27 @@
                                     }
                                     
                                     .login {
-                                        background-color: rgba(133, 221, 133, 0.753);
-                                        margin-top: 40px;
+                                        /*background-color: rgba(133, 221, 133, 0.753);
+                                        margin-top: 40px;*/
                                         border: 4px solid rgb(67, 128, 67);
                                         border-radius: 20px;
+                                        padding-left:20px;
                                     }
+                                    #email,#pwd {
+                                        font-size:15px;
+                                    }
+                                    #buttonlogin {
+                                        background-color: #a8d1f3b4;
+                                        
+
+                                    }
+                                    .txthome {
+                                        border: 4px solid rgb(67, 128, 67);
+                                        border-radius: 20px;
+                                        padding-left:20px;
+                                                       
+                                    }
+                                    
                                     
                                     .carosselandlogin {
                                         margin-bottom: 4em;
