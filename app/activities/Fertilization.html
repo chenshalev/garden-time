@@ -27,10 +27,12 @@
                         <th ng-click="sortBy('FertilizationMaterial')">Fertilization Material</th>
                         <th ng-click="sortBy('FertilizationTimeBegin')">Fertilization Month Begins</th>
                         <th ng-click="sortBy('FertilizationTimeEnds')">Fertilization Month Ends</th>
+                        <th ng-click="sortBy('MaterialAmount')">MaterialAmount</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="pointer" ng-repeat="plant in plantsArr | orderBy: orderProp : false">
+                    <tr  ng-repeat="plant in plantsArr | orderBy: orderProp : false">
                         <td>{{plant.name}}</td>
                         <td>{{plant.FertilizationMaterial}}</td>
                         <td>{{plant.FertilizationTimeBegin}}</td>
