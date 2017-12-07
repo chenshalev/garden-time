@@ -35,7 +35,7 @@ gardenApp.controller("alertCtrl", function ($scope, $log, $http, $location, acti
 
     $scope.newTask = function () {
 
-        $location.path("/newTask")
+        $location.path("/newtask")
     }
     $scope.sortBy = function (prop) {
         $scope.orderProp = prop;

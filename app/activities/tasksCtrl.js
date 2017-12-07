@@ -7,7 +7,7 @@ gardenApp.controller("tasksCtrl", function ($scope, $log, $http, $location, acti
     }
 
     $scope.newTask = function () {
-        $location.path("/newTask");
+        $location.path("/newtask");
     }
     $scope.reports = function () {
         $location.path("/reports");

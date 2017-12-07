@@ -1,4 +1,4 @@
-gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, activeUser, tasks, $routeParams, $route, activeTask) {
+gardenApp.controller("newtaskCtrl", function($scope, $log, $http, $location, activeUser, tasks, $routeParams, $route, activeTask) {
 
     $scope.user = activeUser.get();
 
@@ -67,7 +67,7 @@ gardenApp.controller("newTaskCtrl", function($scope, $log, $http, $location, act
     }
 
     $scope.cancel = function() {
-        $location.path("/newTask");
+        $location.path("/newtask");
     }
 
     $scope.Done = function(task) {
