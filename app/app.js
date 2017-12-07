@@ -66,9 +66,9 @@ gardenApp.config(function($routeProvider) {
             templateUrl: "app/reports/reports.html",
             controller: "reportsCtrl"
         })
-        .when("/newTask", {
+        .when("/newtask", {
             templateUrl: "app/newtask/newtask.html",
-            controller: "newTaskCtrl",
+            controller: "newtaskCtrl",
             kindOfTask: "newtask"
         })
         .when("/taskdetails/:index", {
