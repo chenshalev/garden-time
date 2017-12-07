@@ -1,34 +1,42 @@
 [{
         "name": "20:20:20",
-        "Kind": "Fertilization material"
+        "Kind": "Fertilization material",
+        "MaterialAmount": "100"
     },
     {
         "name": "Composte",
-        "Kind": "Fertilization material"
+        "Kind": "Fertilization material",
+        "MaterialAmount": "60"
     },
     {
         "name": "Iron",
-        "Kind": "Fertilization material"
+        "Kind": "Fertilization material",
+        "MaterialAmount": "70"
     },
     {
         "name": "Humus",
-        "Kind": "Fertilization material"
+        "Kind": "Fertilization material",
+        "MaterialAmount": "10"
     },
     {
         "name": "Dizictol",
-        "Kind": "Herbacide material"
+        "Kind": "Herbacide material",
+        "MaterialAmount": "90"
     },
     {
         "name": "Desheon",
-        "Kind": "Lawn Fertilization material"
+        "Kind": "Lawn Fertilization material",
+        "MaterialAmount": "40"
     },
     {
         "name": "Sistan",
-        "Kind": "Herbacide material"
+        "Kind": "Herbacide material",
+        "MaterialAmount": "50"
     },
     {
         "name": "RoundUp",
-        "Kind": "Herbacide material"
+        "Kind": "Herbacide material",
+        "MaterialAmount": "20"
     }
 
 ]
